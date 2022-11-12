@@ -15,6 +15,7 @@ Esse repositório é para apresentar o desenvolvimento do trabalho do Grupo 3 de
 | 18/0016491 | [Fernando Vargas Teotonio de Oliveira](https://github.com/SFernandoS) |
 | 18/0033620 | [Joao Henrique Cunha Paulino](https://github.com/JoaoHenrique12) |
 | 17/0108341 | [Levi de Oliveira Queiroz](https://github.com/LeviQ27) |
+| 19/0058455 | [Mariana Oliveira Pires do Rio](https://github.com/MarianaPRio) |
 | 15/0143800 | [Paulo Henrique Costa Gontijo](https://github.com/paulohgontijoo) |
 | 18/0108344 | [Rafael Berto Pereira](https://github.com/RafaelBP02) |
 | 18/0027352 | [Rodrigo Carvalho dos Santos](https://github.com/Rocsantos) |
