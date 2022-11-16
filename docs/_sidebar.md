@@ -7,6 +7,7 @@
   - [1. Desenho de Software (Base)](Base/1.Base.md)
     - [1.1. Módulo Projeto Não Orientado a Abordagens Específicas](Base/1.1.AbordagemNaoEspecifica.md)
       - [1.1.1 Rich Picture](Base/1.1.1.RichPicture.md)
+      - [Plano de Gerenciamento de Riscos](Base/Plano_de_Riscos.md)
     - [1.2. Módulo Processos/Metodologias/Abordagens](Base/1.2.ProcessosMetodologiasAbordagens.md)
     - [1.3. Iniciativas Extras - Base](Base/1.3.IniciativasExtras.md)
     - [1.4. Participações - Base](Base/1.4.ParticipacoesBase.md)
