@@ -9,6 +9,11 @@
       - [1.1.1 Rich Picture](Base/1.1.1.RichPicture.md)
       - [1.1.2 Plano de Gerenciamento de Riscos](Base/PlanoDeRiscos.md)
       - [1.1.3 Mapa Mental](Base/1.1.3.MapaMental.md)
+      - [1.1.5 Brainstorm](Base/brainstorm.md)
+      - [1.1.6 Design Sprint](Base/DesignSprint.md)
+      - [1.1.7 Glossário Lexico](Base/GlossarioLexico.md) 
+      - [1.1.8 Backlog do Produto](Base/Backlog.md)
+      
     - [1.2. Módulo Processos/Metodologias/Abordagens](Base/1.2.ProcessosMetodologiasAbordagens.md)
     - [1.3. Iniciativas Extras - Base](Base/1.3.IniciativasExtras.md)
     - [1.4. Participações - Base](Base/1.4.ParticipacoesBase.md)
