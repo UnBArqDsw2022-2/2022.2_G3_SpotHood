@@ -69,8 +69,8 @@ nosso escopo. De forma mais crua, ficou:
 
 ## 5. Histórico de versões
 
-| Versão |   Data   |                   Alteração                    | Responsável |
+| Versão |   Data   |                   Alteração                    | Participantes |
 | :----: | :------: | :--------------------------------------------: | :---------: |
-| 0.0.1  | 16/11/22 |              Criação do documento              |  Fernando   |
+| 0.0.1  | 16/11/22 |              Criação do documento              | Fernando Vargas, Cristian Furtado, Paulo Gontijo, João Henrique, Rafael Berto, Victor Yukio, Rodrigo Santos |
     
 </p>
