@@ -7,6 +7,10 @@ Gerenciamento de Risco define como será identificado, controlado e mantido os r
 Separando os riscos em categorias organizacional, gerencia de projeto, técnico, qualidade e externo.
 Também pode ser separado em graus de Probabilidade e Impacto.
 
+## Estrutura Analítica dos Riscos
+
+![image](../assets/Riscos.png)
+
 ## Processo para Gerenciamento de Riscos
 
 O processo de gerenciamento de riscos dá a visão do que será realizado com relação aos riscos.
@@ -18,30 +22,31 @@ O processo de gerenciamento de riscos dá a visão do que será realizado com re
 - **Monitorar:** Consiste em controlar os riscos durante o projeto, avaliando as suas causas. Uma prática que pode ser adotada nesta atividade é atribuir pessoas responsáveis por realizar o monitoramento.
 
 ## Categoria de Riscos
-### Organizacional
-- **Recursos Humanos:** Corresponde aos riscos relacionados aos recursos humanos, bem como o comprometimento da equipe de desenvolvimento e falta de comunicação entre as partes envolvidas.
-- **Priorização:** São riscos relacionados aos erros de priorização, gerando atrasos nas entregas, por existir dependências entre as tarefas.
 
 ### Técnico
+- **Infraestrutura:** Um dos pontos mais críticos do gerenciamento de riscos em projetos de software, pois geralmente nos esquecemos de providenciar com antecedência a infraestrutura onde o software será executado. É um ponto crítico de conflitos entre a área de infraestrutura, suporte e desenvolvimento.
 - **Requisitos:** Riscos relacionados aos requisitos levantados e ao escopo definido;
 - **Tecnologia:** É relativo a riscos relacionados às tecnologias e ferramentas utilizadas no projeto.
-- **Infraestrutura:** Um dos pontos mais críticos do gerenciamento de riscos em projetos de software, pois geralmente nos esquecemos de providenciar com antecedência a infraestrutura onde o software será executado. É um ponto crítico de conflitos entre a área de infraestrutura, suporte e desenvolvimento.
-
-### Qualidade
-- **Funcionalidade:** Contempla tudo relacionado à funcionalidade do software, como garantir que os requisitos foram atendidos de forma satisfatória, garantir que atende a real necessidade do usuário e se retornará resultados precisos.
-- **Usabilidade:** A usabilidade engloba todos os aspectos referentes à interface com o usuário, que se sinta a vontade com o uso do sistema e que o entenda, com o mínimo de treinamento.
-- **Eficiência:** Garantir que o usuário consiga ter as respostas da aplicação de forma rápida e coesa.
-- **Portabilidade:** Se refere a que plataformas/sistemas operacionais o software irá rodar e como será feita a compatibilidade.
-
-### Gerencia de projeto
-- **Planejamento:** São riscos relacionados a erros de planejamento, como tarefas grandes em períodos curtos.
-- **Estimativa:** São erros que dizem respeito a erros de estimativa, como por exemplo erros de pontuação de histórias de usuário.
-- **Controle:** São riscos referentes a falta de ação sobre riscos identificados.
 
 ### Externos
-- **Mercado:** Baixa adesão dos usuários a aplicação, risco relacionado à utilização e evolução do projeto no mercado.
-- **Cliente:** Diz respeito aos riscos relacionados com o cliente, como aprovação da solução. No caso do "A Monitoria" a sazonalidade do uso do produto pode representar um risco.
 - **Ambiente:** O ambiente pode influenciar no desempenho da equipe e no desenvolvimento do produto, um exemplo aplicado ao nosso projeto é o fato de a maior parte do desenvolvimento acontecer na FGA e uma das limitações que pode ocorrer é a falta da internet ou a realização greves.
+- **Cliente:** Diz respeito aos riscos relacionados com o cliente, como aprovação da solução. No caso do "A Monitoria" a sazonalidade do uso do produto pode representar um risco.
+- **Mercado:** Baixa adesão dos usuários a aplicação, risco relacionado à utilização e evolução do projeto no mercado.
+
+### Organizacional
+- **Priorização:** São riscos relacionados aos erros de priorização, gerando atrasos nas entregas, por existir dependências entre as tarefas.
+- **Recursos Humanos:** Corresponde aos riscos relacionados aos recursos humanos, bem como o comprometimento da equipe de desenvolvimento e falta de comunicação entre as partes envolvidas.
+
+### Gerencia de projeto
+- **Controle:** São riscos referentes a falta de ação sobre riscos identificados.
+- **Estimativa:** São erros que dizem respeito a erros de estimativa, como por exemplo erros de pontuação de histórias de usuário.
+- **Planejamento:** São riscos relacionados a erros de planejamento, como tarefas grandes em períodos curtos.
+
+### Qualidade
+- **Eficiência:** Garantir que o usuário consiga ter as respostas da aplicação de forma rápida e coesa.
+- **Funcionalidade:** Contempla tudo relacionado à funcionalidade do software, como garantir que os requisitos foram atendidos de forma satisfatória, garantir que atende a real necessidade do usuário e se retornará resultados precisos.
+- **Portabilidade:** Se refere a que plataformas/sistemas operacionais o software irá rodar e como será feita a compatibilidade.
+- **Usabilidade:** A usabilidade engloba todos os aspectos referentes à interface com o usuário, que se sinta a vontade com o uso do sistema e que o entenda, com o mínimo de treinamento.
 
 
 ## Definição de Probabilidade, Impacto e Matriz de Impacto
