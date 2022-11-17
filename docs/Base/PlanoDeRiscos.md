@@ -125,3 +125,10 @@ RE1 | Falta de Validação de Potencial Cliente | Não conseguir contactar uma p
 > [Aula13-1 - Gerenciamento dos Riscos: Processo: Planejar o gerenciamento dos riscos](https://www.youtube.com/watch?v=HDMS7ftQJb0&t=2s) Disponível em 14/11/22<br><br>
 > [Plano de Riscos - SpaceShooter](https://github.com/DesenhoMaster2017/SpaceShooter/wiki/Plano-de-Riscos) Disponível em 14/11/22<br><br>
 > [Controle de Riscos - A Monitoria](https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_II/controle_riscos/) Disponível em 14/11/22
+
+## Histórico de versões
+
+| Versão |   Data   |                   Alteração                    | Participantes |
+| :----: | :------: | :--------------------------------------------: | :---------: |
+| 0.0.1  | 17/11/22 |              Criação do documento              | Rodrigo Santos |
+| 0.0.2  | 17/11/22 |  Adição de conteudo  | Mariana Rio |
