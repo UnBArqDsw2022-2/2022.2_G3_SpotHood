@@ -1,0 +1,76 @@
+# Brainstorm
+
+## 1. Introdução
+
+<p style="text-indent: 20px; text-align: justify">
+O Brainstorming é uma das mais conhecidas técnicas de Elicitação de requisitos. Ela é utilizada para estimular o surgimento de soluções e ideias criativas a partir 
+  da discussão entre integrantes da equipe. Também podemos identificar possiveis problemas e explorar maneiras de contorná-las. Essas ideias e soluções são registradas 
+  e transformadas em Requisitos do Produto de Software.
+</p>
+
+## 2. Metodologia
+
+<p style="text-indent: 20px; text-align: justify">
+A princípio, a técnica do Brainstorm é realizada de forma presencial, em uma reunião das partes interessadas e cada um expões as ideias ali pensadas, entretanto 
+não conseguimos organizar uma logística para fazer presencialmento. Portanto, decidimos nosencontrar remotamente através do Discord. E, utilizamos o HackMD para expor 
+nossas ideias num documento compartilhado entre todos os integrantes. Cada ideia, solução e observação foi discutida em conjuto com toda a equipe. Para facilitar no 
+surgimento de ideias e o descubrimento de possíveis problemas, todos os integrantes escreveram ideias e problemas que podem compor a nossa solução.
+</p>
+
+<p style="text-indent: 20px; text-align: justify">
+A reunição durou cerca de 3 horas. Decidimos elencar as ideias que serviriam para um perfil inicial de três personas, para, depois, selecionar quais ideias caberia em
+nosso escopo. De forma mais crua, ficou:
+
+## 3. Brainstorm
+
+### Geral:
+
+  - Fórum online em que pode ser colocado posts em que cada participante do condomínio pode comentar;
+  - Votação de proposta;
+  - Ocorrência condominial;
+  - Atas de reunião;
+  - Relatório de gastos/receita do condomínio;
+  - Avisos em geral;
+  - Grade horária para aluguel de churrasqueira, sauna, sala de jogos etc;
+  - Agenda para pagamento de condomínio;
+  - Mural com as regras do condominio. (Termo de convivência);
+  - Mostrar qual vaga de garagem (se o condomínio tiver) pertence a quem, podendo alterar ou adicionar donos em diferentes vagas;
+  - Cadastro temporário de visitante, com nome e CPF, até 2 dias;
+  - Votações.
+    
+
+### Sindico:
+  
+  - Apresentar propostas durante o periodo de eleicao;
+  - Portal de transparência;
+  - Gerar boleto de pagamento de condominio;
+  - Marcar reuniões.
+
+### Morador:
+   - Reclamações;
+   - Votar em um sindico;
+   - Solicitar uma reserva em algum espaco(churrasqueira, salao de jogos) em um determinado horário disponível da grade;
+   - Gerar uma autorização de entrada para visitantes;
+   - Cadastro de veículo;
+   - Aluguel de vagas de estacionamento;
+   - Botao de emergencia para acionar a portaria.
+    
+    
+### Porteiro/Funcionário:
+  
+   - Aprovar reserva de algum lugar;
+   - Receber encomendas e avisa ao morador que ela chegou;
+   - Chat com a portaria;
+
+
+## 4. Referências
+
+> Carlos Eduardo Vazquez, Guilherme Siqueira Simões, Engenharia de requisitos: software orientado ao negócio, 1ª ed., Brasport, 2016.
+
+## 5. Histórico de versões
+
+| Versão |   Data   |                   Alteração                    | Participantes |
+| :----: | :------: | :--------------------------------------------: | :---------: |
+| 0.0.1  | 16/11/22 |              Criação do documento              | Fernando Vargas, Cristian Furtado, Paulo Gontijo, João Henrique, Rafael Berto, Victor Yukio, Rodrigo Santos |
+    
+</p>
