@@ -30,13 +30,13 @@ Isso será possível através de uma aplicação web que servirá como um portal
 
 ## Screenshots Primeira Entrega <<FOCO: DSW(Base)>>
 ### Rich Picture: 
-![Rich Picture](../assets/RichPicture.jpg)
+![Rich Picture](./assets/RichPicture.jpg)
 ### Plano de Riscos:
-![Plano de Riscos](../assets/Riscos.png)
+![Plano de Riscos](./assets/Riscos.png)
 ### Mapa Mental:
-![Mapa Mental](../assets/print_mapa_mental.png)
+![Mapa Mental](./assets/print_mapa_mental.png)
 ### Diagrama de Causa-Efeito (Ishikawa):
-![Diagrama Causa-Efeito](../assets/Diagrama_Ishikawa.png)
+![Diagrama Causa-Efeito](./assets/Diagrama_Ishikawa.png)
 
 ## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
 Adicione 2 ou mais screenshots do projeto em termos de artefatos da Segunda Entrega.
