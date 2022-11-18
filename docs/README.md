@@ -2,7 +2,7 @@
 
 Esse repositório é para apresentar o desenvolvimento do trabalho do Grupo 3 de Arquitetura e Desenho de Software
 
-# Nome do Projeto
+# SpotHood
 
 **Código da Disciplina**: FGA0208<br>
 **Número do Grupo**: 03<br>
@@ -22,12 +22,21 @@ Esse repositório é para apresentar o desenvolvimento do trabalho do Grupo 3 de
 | 18/0068229 | [Victor Yukio Cavalcanti Miki](https://github.com/yukioz) |
 | 16/0147816 | [Vinicius Edwardo Pereira Oliveira](https://github.com/viniciused26) |
 
-## Sobre 
-Descreva o seu projeto em linhas gerais.
-Use referências, links, que permitam conhecer um pouco mais sobre o projeto.
+## Sobre
+Este projeto tem como objetivo aproximar síndicos, funcionários e moradores de um condomínio, facilitando a interação, transparência e comunicação entre eles.<br>
+
+Isso será possível através de uma aplicação web que servirá como um portal de comunicação e centralização de informações para toda a comunidade do condomínio. 
+
 
 ## Screenshots Primeira Entrega <<FOCO: DSW(Base)>>
-Adicione 2 ou mais screenshots do projeto em termos de artefatos da Primeira Entrega.
+### Rich Picture: 
+![Rich Picture](../assets/RichPicture.jpg)
+### Plano de Riscos:
+![Plano de Riscos](../assets/Riscos.png)
+### Mapa Mental:
+![Mapa Mental](../assets/print_mapa_mental.png)
+### Diagrama de Causa-Efeito (Ishikawa):
+![Diagrama Causa-Efeito](../assets/Diagrama_Ishikawa.png)
 
 ## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
 Adicione 2 ou mais screenshots do projeto em termos de artefatos da Segunda Entrega.
@@ -39,9 +48,9 @@ Adicione 2 ou mais screenshots do projeto em termos de artefatos da Terceira Ent
 Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
 
 ## Descritivo dos Principais Aspectos Técnicos 
-**Principal(is) Metodologia(s) Adotada(s)**: xxxxxx<br>
-**Principais Linguagens Utilizadas e/ou Pretendidas**: xxxxxx<br>
-**Principais Tecnologias Utilizadas e/ou Pretendidas**: xxxxxx<br>
+**Principal(is) Metodologia(s) Adotada(s)**: XP, Scrum, Kanbam<br>
+**Principais Linguagens Utilizadas e/ou Pretendidas**: Python, JavaScript<br>
+**Principais Tecnologias Utilizadas e/ou Pretendidas**: Django, React<br>
 **Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: xxxxxx<br>
 
 ## O Projeto está rodando?
