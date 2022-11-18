@@ -14,3 +14,4 @@
       - [1.1.7. Rich Picture](Base/1.1.7.RichPicture.md)
       - [1.1.8. Glossário Lexico](Base/1.1.8.GlossarioLexico.md) 
       - [1.1.9. Backlog do Produto](Base/1.1.9.Backlog.md)
+    - [1.2. Metodologia](Base/1.2.ProcessosMetodologiasAbordagens.md)
