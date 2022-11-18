@@ -1,33 +1,42 @@
-# RepositorioTemplate
-Esse repositório é para ser utilizado pelos grupos como um template inicial, da home page do Projeto.
-As seções do Template NÃO DEVEM SER OMITIDAS, sendo TODAS RELEVANTES.
-Demais diretrizes sobre a organização da wiki constam no Moodle Aprender 3.
+# Grupo 3
 
-**!! Atenção: Renomeie o seu repositório para (Ano.Semestre)_(Grupo)_(NomeDoProjeto)*. !!** 
+Esse repositório é para apresentar o desenvolvimento do trabalho do Grupo 3 de Arquitetura e Desenho de Software
 
-**!! *Não coloque os nomes dos alunos no título do repositório*. !!**
-
-**!! *Exemplo de título correto: 2022.1_G1_ProjetoPandora*. !!** 
- 
- (Apague esses comentários)
-
-# Nome do Projeto
+# SpotHood
 
 **Código da Disciplina**: FGA0208<br>
-**Número do Grupo**: XX<br>
+**Número do Grupo**: 03<br>
 
 ## Alunos
-|Matrícula | Aluno |
+| Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 17/0008291 | [Cristian Souza Assis Furtado](https://github.com/csafurtado) |
+| 19/0127708 | [Daniel Ashton Oda](https://github.com/danieloda) |
+| 18/0016491 | [Fernando Vargas Teotonio de Oliveira](https://github.com/SFernandoS) |
+| 18/0033620 | [Joao Henrique Cunha Paulino](https://github.com/JoaoHenrique12) |
+| 17/0108341 | [Levi de Oliveira Queiroz](https://github.com/LeviQ27) |
+| 19/0058455 | [Mariana Oliveira Pires do Rio](https://github.com/MarianaPRio) |
+| 15/0143800 | [Paulo Henrique Costa Gontijo](https://github.com/paulohgontijoo) |
+| 18/0108344 | [Rafael Berto Pereira](https://github.com/RafaelBP02) |
+| 18/0027352 | [Rodrigo Carvalho dos Santos](https://github.com/Rocsantos) |
+| 18/0068229 | [Victor Yukio Cavalcanti Miki](https://github.com/yukioz) |
+| 16/0147816 | [Vinicius Edwardo Pereira Oliveira](https://github.com/viniciused26) |
 
-## Sobre 
-Descreva o seu projeto em linhas gerais.
-Use referências, links, que permitam conhecer um pouco mais sobre o projeto.
+## Sobre
+Este projeto tem como objetivo aproximar síndicos, funcionários e moradores de um condomínio, facilitando a interação, transparência e comunicação entre eles.<br>
+
+Isso será possível através de uma aplicação web que servirá como um portal de comunicação e centralização de informações para toda a comunidade do condomínio. 
+
 
 ## Screenshots Primeira Entrega <<FOCO: DSW(Base)>>
-Adicione 2 ou mais screenshots do projeto em termos de artefatos da Primeira Entrega.
+### Rich Picture: 
+![Rich Picture](./assets/RichPicture.jpg)
+### Plano de Riscos:
+![Plano de Riscos](./assets/Riscos.png)
+### Mapa Mental:
+![Mapa Mental](./assets/print_mapa_mental.png)
+### Diagrama de Causa-Efeito (Ishikawa):
+![Diagrama Causa-Efeito](./assets/Diagrama_Ishikawa.png)
 
 ## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
 Adicione 2 ou mais screenshots do projeto em termos de artefatos da Segunda Entrega.
@@ -39,14 +48,14 @@ Adicione 2 ou mais screenshots do projeto em termos de artefatos da Terceira Ent
 Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
 
 ## Descritivo dos Principais Aspectos Técnicos 
-**Principal(is) Metodologia(s) Adotada(s)**: xxxxxx<br>
-**Principais Linguagens Utilizadas e/ou Pretendidas**: xxxxxx<br>
-**Principais Tecnologias Utilizadas e/ou Pretendidas**: xxxxxx<br>
+**Principal(is) Metodologia(s) Adotada(s)**: XP, Scrum, Kanbam<br>
+**Principais Linguagens Utilizadas e/ou Pretendidas**: Python, JavaScript<br>
+**Principais Tecnologias Utilizadas e/ou Pretendidas**: Django, React<br>
 **Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: xxxxxx<br>
 
 ## O Projeto está rodando?
 ( ) SIM
-( ) NÃO
+(x) NÃO
 Se SIM, insira um manual (ou um script) para auxiliar ainda mais os interessados em consultar o projeto.
 
 ## Informações Complementares 
