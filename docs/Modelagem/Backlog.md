@@ -1,0 +1,61 @@
+# Backlog do Produto
+## 1. Introdução
+O *Product Backlog* é uma lista de itens a serem implementados dentro do escopo de desenvolvimento de software, em que os 
+itens são priorizados de acordo com o valor que cada funcionalidade agrega para o cliente. O backlog é atualizado e sofre 
+alterações durante o processo de desenvolvimento, em conformidade com o andamento do projeto. Dentro de uma abordagem Ágil, 
+os itens dos backlog são desenvolvidos ao longo de Sprints, que englobam determinada quantidade de itens do Backlog. Já
+em um contexto tradicional, como Kanban, o desenvolvimento acontece de forma linear, com o foco na execução completa da tarefa
+sem quebrar o fluxo de trabalho.
+
+## 2. Requisitos Funcionais
+Abaixo segue a tabela de requisitos funcionais elicitados:
+<center>
+
+| Numero |              Nome               |                                                       Descrição                                                        |                                   Origem                                    | Prioridade |
+|:------:|:-------------------------------:|:----------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------:|:----------:|
+|  RF01  |      Cadastrar condomínio       |                             Cadastro de um condomínio no site e suas regras de convivência                             |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Must  |
+|  RF02  |      Cadastrar funcionário      |                     Cadastro de um ou mais funcionários com diferentes papéis dentro do condomínio                     | [Brainstorm](Base/brainstorm.md), [Rich Picture](Base/1.1.7.RichPicture.md) | Should  |
+|  RF03  |        Cadastrar síndico        |                                    Cadastro de um síndico designado a um condomínio                                    | [Brainstorm](Base/brainstorm.md), [Rich Picture](Base/1.1.7.RichPicture.md) | Must  |
+|  RF04  |       Cadastrar condômino       |                 Cadastro de um condômino, proprietário de uma ou mais unidades dentro de um condomínio                 |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Must  |
+|  RF05  |        Cadastrar morador        |                          Cadastro de um ou mais moradores de uma unidade dentro do condomínio                          | [Brainstorm](Base/brainstorm.md), [Rich Picture](Base/1.1.7.RichPicture.md) | Should  |
+|  RF06  |       Cadastrar vistante        |                                Cadastro de um vistante de uma ou mais unidades no site                                 | [Brainstorm](Base/brainstorm.md), [Rich Picture](Base/1.1.7.RichPicture.md) |  Wouldn’t  |
+|  RF07  | Cadastrar veículo de condômino  |                          Cadastro de um veículo vinculado a uma vaga de garagem do condomínio                          |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Could  |
+|  RF08  |        Cadastrar evento         |     Cadastro, pelo síndico, de eventos (reunião, festas, aulões, etc) que ocorrerão em certas datas no condomínio      | [Brainstorm](Base/brainstorm.md), [Rich Picture](Base/1.1.7.RichPicture.md) | Must  |
+|  RF10  |        Cadastrar locais         |   Cadastro, pelo síndico, de locais (quadra de esportes, academia, piscina, churrasqueira, etc) dentro do condomínio   | [Brainstorm](Base/brainstorm.md), [Rich Picture](Base/1.1.7.RichPicture.md) | Must  |
+|  RF11  |        Cadastrar avisos         |                                      Cadastro, pelo síndico, de eventuais avisos                                       | [Brainstorm](Base/brainstorm.md), [Rich Picture](Base/1.1.7.RichPicture.md) | Must  |
+|  RF12  | Emissão de relatório financeiro | A cada mês, o síndico emite um relatório de gastos e de receita do condomínio para visualização de todos os condôminos |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Must  |
+|  RF13  |       Cadastro de votação       |                  O sistema deve ser capaz de realizar votações internas de assembléias condomininais                   |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Could  |
+|  RF14  |       Cadastro de boletos       |                 O sistema deve ser capaz de cadastrar boletos para o pagamento das taxas de condomínio                 |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Wouldn't  |
+|  RF15  |     Cadastro de ocorrências     |                         O sistema deve ser capaz de cadastrar eventuais ocorrências que surjam                         |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Should  |
+|  RF16  |      Cadastro de reservas       |                            O sistema deve ser capaz de cadastrar reservas de espaços comuns                            |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Should |
+|  RF17  |      Cadastro de finanças       |                 O sistema deve ser capaz de cadastrar operações financeiras corriqueiras do condomínio                 |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Must  |
+
+
+<h6 align='center'>Tabela 1: Requisitos Funcionais<h6/>
+
+</center>
+
+## 3. Requisitos Não Funcionais
+Abaixo segue a tabela de requisitos não funcionais elicitados:
+<center>
+
+| Numero |        Nome        |                                        Descrição                                        |              Origem              | Prioridade |
+|:------:|:------------------:|:---------------------------------------------------------------------------------------:|:--------------------------------:|:----------:|
+| RNF01  | Interopelabilidade |                   A aplicação deve ser executado em qualquer browser                    | [Brainstorm](Base/brainstorm.md) | Should  |
+| RNF02  |    Resiliência     |          O website deve ser capaz de receber múltiplas requisições simultâneas          | [Brainstorm](Base/brainstorm.md) | Should  |
+| RNF03  |    Resiliência     |                    O website deve estar disponível 24 horas por dia                     | [Brainstorm](Base/brainstorm.md) | Could  |
+| RNF04  |    Resiliência     | O website deve ser capaz realizar manutenções sem prejudicar o funcionamento do sistema | [Brainstorm](Base/brainstorm.md) | Could  |
+
+
+<h6 align='center'>Tabela 2: Requisitos Não Funcionais<h6/>
+
+</center>
+
+## 4. Histórico de versões
+
+| Versão |    Data    |                       Modificação                        |                                                             Autor                                                              |
+|:------:|:----------:|:--------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------:|
+|  1.0   | 16/11/2022 | Criação do documento e tópico de 'requisitos elicitados' | Cristian Furtado, Paulo Gontijo, João Henrique, Fernando Vargas, Rafael Berto, Victor Yukio, Vinícius Oliveira, Rodrigo Santos |
+|  1.1   | 17/11/2022 |        Adicionando rastreabilidade aos requisitos        |                                                      Rafael Berto Pereira                                                      |
+|  1.2   | 17/11/2022 |               Complementação de requisitos               |                                                         Paulo Gontijo                                                          |
+|  2.0   | 29/11/2022 |               Priorização dos requisitos           |    Paulo Gontijo, João Henrique, Cristian Furtado, Victor Yukio, Daniel Oda, Rafael Berto, Fernando Vargas, Rodrigo Santos    |
