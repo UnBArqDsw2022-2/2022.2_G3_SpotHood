@@ -4,15 +4,15 @@
 
 - **Sprints**
   - [Sprint 1](./Sprints/sprint1.md)
-  <!-- - [Sprint 2]()
-  - [Sprint 3]()
-  - [Sprint 4]()
-  - [Sprint 5]()
-  - [Sprint 6]()
-  - [Sprint 7]()
-  - [Sprint 8]()
-  - [Sprint 9]()
-  - [Sprint 10]() -->
+[//]: # (  - [Sprint 2]&#40;&#41;)
+[//]: # (  - [Sprint 3]&#40;&#41;)
+[//]: # (  - [Sprint 4]&#40;&#41;)
+[//]: # (  - [Sprint 5]&#40;&#41;)
+[//]: # (  - [Sprint 6]&#40;&#41;)
+[//]: # (  - [Sprint 7]&#40;&#41;)
+[//]: # (  - [Sprint 8]&#40;&#41;)
+[//]: # (  - [Sprint 9]&#40;&#41;)
+[//]: # (  - [Sprint 10]&#40;&#41;)
 
 - **Base**
   - [1. Desenho de Software (Base)](Base/1.Base.md)
@@ -28,3 +28,22 @@
       - [1.1.9. Backlog do Produto](Base/1.1.9.Backlog.md)
     - [1.2. Metodologia](Base/1.2.ProcessosMetodologiasAbordagens.md)
     - [1.4. Participações](Base/1.4.ParticipacoesBase.md)
+
+- **Como contribuir para o projeto?**
+  - [Gitflow](/gitflow.md)
+    - [Sumário](./gitflow.md#sumário)
+    - [Motivação](./gitflow.md#motivação)
+    - [Políticas de Contribuição](./gitflow.md#políticas-de-contribuição)
+      - [Idioma](./gitflow.md#idioma)
+      - [Ética](./gitflow.md#ética)
+      - [Branches](./gitflow.md#branches)
+        - [Fluxo de Branches](./gitflow.md#fluxo-de-branches)
+        - [Exemplo](./gitflow.md#exemplo-do-fluxo-de-branches)
+      - [Commits](./gitflow.md#commits)
+        - [Commits Atômicos](./gitflow.md#commits-atômicos)
+        - [Anatomia do Commit](./gitflow.md#anatomia-do-commit)
+          - [Observações](./gitflow.md#observações)
+          - [Exemplo](./gitflow.md#exemplo-de-commit)
+      - [Pull Request](./gitflow.md#pull-request)
+      - [Nomenclatura](./gitflow.md#nomenclatura)
+    - [Histórico de Versões](./gitflow.md#histórico-de-versões)
