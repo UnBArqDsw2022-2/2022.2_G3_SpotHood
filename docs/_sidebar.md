@@ -16,3 +16,8 @@
       - [1.1.9. Backlog do Produto](Base/1.1.9.Backlog.md)
     - [1.2. Metodologia](Base/1.2.ProcessosMetodologiasAbordagens.md)
     - [1.4. Participações](Base/1.4.ParticipacoesBase.md)
+
+- **Modelagem**
+  - [2. Desenho de Software (Base)](Modelagem/2.Modelagem.md)
+    - [2.2.  Iniciativas Extras - Modelagem](Modelagem/2.2.IniciativasExtras.md)
+      - [2.2.1. Diagrama de Atividades](Modelagem/2.2.1.DocumentoExtra.md)
