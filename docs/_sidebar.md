@@ -2,6 +2,18 @@
 
 - [Home](/README.md)
 
+- **Sprints**
+  - [Sprint 1](./Sprints/sprint1.md)
+[//]: # (  - [Sprint 2]&#40;&#41;)
+[//]: # (  - [Sprint 3]&#40;&#41;)
+[//]: # (  - [Sprint 4]&#40;&#41;)
+[//]: # (  - [Sprint 5]&#40;&#41;)
+[//]: # (  - [Sprint 6]&#40;&#41;)
+[//]: # (  - [Sprint 7]&#40;&#41;)
+[//]: # (  - [Sprint 8]&#40;&#41;)
+[//]: # (  - [Sprint 9]&#40;&#41;)
+[//]: # (  - [Sprint 10]&#40;&#41;)
+
 - **Base**
   - [1. Desenho de Software (Base)](Base/1.Base.md)
     - [1.1. Módulo Projeto Não Orientado a Abordagens Específicas](Base/1.1.AbordagemNaoEspecifica.md)
@@ -16,6 +28,29 @@
       - [1.1.9. Backlog do Produto](Base/1.1.9.Backlog.md)
     - [1.2. Metodologia](Base/1.2.ProcessosMetodologiasAbordagens.md)
     - [1.4. Participações](Base/1.4.ParticipacoesBase.md)
-  - [2. Desenho de Software (Modelagem)](./Modelagem/2.Modelagem.md)
+
+- **Modelagem**
+  - [2. Desenho de Software (Base)](Modelagem/2.Modelagem.md)
     - [2.1 Modelagem Tradicional](./Modelagem/2.1.ModelagemTradicional.md)
       - [2.1.1 Diagrama de Classe](./Modelagem/2.1.1.diagramaDeClasses.md)
+    - [2.1.2. Notação UML – Diagramas Dinâmicos](Modelagem/2.1.2.UMLDinamicos.md)
+      - [2.1.2.1. Diagrama de Atividades](Modelagem/2.1.2.DiagramaAtividades.md)
+
+- **Como contribuir para o projeto?**
+  - [Gitflow](/gitflow.md)
+    - [Sumário](./gitflow.md#sumário)
+    - [Motivação](./gitflow.md#motivação)
+    - [Políticas de Contribuição](./gitflow.md#políticas-de-contribuição)
+      - [Idioma](./gitflow.md#idioma)
+      - [Ética](./gitflow.md#ética)
+      - [Branches](./gitflow.md#branches)
+        - [Fluxo de Branches](./gitflow.md#fluxo-de-branches)
+        - [Exemplo](./gitflow.md#exemplo-do-fluxo-de-branches)
+      - [Commits](./gitflow.md#commits)
+        - [Commits Atômicos](./gitflow.md#commits-atômicos)
+        - [Anatomia do Commit](./gitflow.md#anatomia-do-commit)
+          - [Observações](./gitflow.md#observações)
+          - [Exemplo](./gitflow.md#exemplo-de-commit)
+      - [Pull Request](./gitflow.md#pull-request)
+      - [Nomenclatura](./gitflow.md#nomenclatura)
+    - [Histórico de Versões](./gitflow.md#histórico-de-versões)
