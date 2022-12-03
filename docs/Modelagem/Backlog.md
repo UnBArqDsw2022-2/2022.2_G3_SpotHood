@@ -44,6 +44,13 @@ atual.
 
 ### 1.3 Épicos, Histórias de usuários e Tarefa
 
+A granularização dos requisitos seguirá o seguinte padrão:
+-  Épico: É uma história de usuário que ainda não foi detalhada, é muito grande ou ainda
+possui muita incerteza e portanto não pode ser transformada em incremento do produto. 
+- História de usuário: é um formato sucinto para escrita dos requisitos necessários para
+a construção de um produto. 
+- Tarefas: são itens técnicos necessários para que uma História de Usuário se transforme
+em incremento do produto. 
 
 ## 2. Requisitos Funcionais
 Abaixo segue a tabela de requisitos funcionais elicitados:
@@ -51,22 +58,22 @@ Abaixo segue a tabela de requisitos funcionais elicitados:
 
 | Numero |              Nome               |                                                       Descrição                                                        |                                   Origem                                    | Prioridade | Granularidade |
 |:------:|:-------------------------------:|:----------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------:|:----------:| :-----: |
-|  RF01  |      Cadastrar condomínio       |                             Cadastro de um condomínio no site e suas regras de convivência                             |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Must  | undefined|
-|  RF02  |      Cadastrar funcionário      |                     Cadastro de um ou mais funcionários com diferentes papéis dentro do condomínio                     | [Brainstorm](Base/brainstorm.md), [Rich Picture](Base/1.1.7.RichPicture.md) | Should  | undefined|
-|  RF03  |        Cadastrar síndico        |                                    Cadastro de um síndico designado a um condomínio                                    | [Brainstorm](Base/brainstorm.md), [Rich Picture](Base/1.1.7.RichPicture.md) | Must  | undefined|
-|  RF04  |       Cadastrar condômino       |                 Cadastro de um condômino, proprietário de uma ou mais unidades dentro de um condomínio                 |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Must  | undefined|
-|  RF05  |        Cadastrar morador        |                          Cadastro de um ou mais moradores de uma unidade dentro do condomínio                          | [Brainstorm](Base/brainstorm.md), [Rich Picture](Base/1.1.7.RichPicture.md) | Should  | undefined|
-|  RF06  |       Cadastrar vistante        |                                Cadastro de um vistante de uma ou mais unidades no site                                 | [Brainstorm](Base/brainstorm.md), [Rich Picture](Base/1.1.7.RichPicture.md) |  Wouldn’t  | undefined|
-|  RF07  | Cadastrar veículo de condômino  |                          Cadastro de um veículo vinculado a uma vaga de garagem do condomínio                          |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Could  | undefined|
-|  RF08  |        Cadastrar evento         |     Cadastro, pelo síndico, de eventos (reunião, festas, aulões, etc) que ocorrerão em certas datas no condomínio      | [Brainstorm](Base/brainstorm.md), [Rich Picture](Base/1.1.7.RichPicture.md) | Must  | undefined|
-|  RF10  |        Cadastrar locais         |   Cadastro, pelo síndico, de locais (quadra de esportes, academia, piscina, churrasqueira, etc) dentro do condomínio   | [Brainstorm](Base/brainstorm.md), [Rich Picture](Base/1.1.7.RichPicture.md) | Must  | undefined|
-|  RF11  |        Cadastrar avisos         |                                      Cadastro, pelo síndico, de eventuais avisos                                       | [Brainstorm](Base/brainstorm.md), [Rich Picture](Base/1.1.7.RichPicture.md) | Must  | undefined|
-|  RF12  | Emissão de relatório financeiro | A cada mês, o síndico emite um relatório de gastos e de receita do condomínio para visualização de todos os condôminos |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Must  | undefined|
-|  RF13  |       Cadastro de votação       |                  O sistema deve ser capaz de realizar votações internas de assembléias condomininais                   |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Could  | undefined|
-|  RF14  |       Cadastro de boletos       |                 O sistema deve ser capaz de cadastrar boletos para o pagamento das taxas de condomínio                 |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Wouldn't  | undefined|
-|  RF15  |     Cadastro de ocorrências     |                         O sistema deve ser capaz de cadastrar eventuais ocorrências que surjam                         |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Should  | undefined|
-|  RF16  |      Cadastro de reservas       |                            O sistema deve ser capaz de cadastrar reservas de espaços comuns                            |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Should | undefined|
-|  RF17  |      Cadastro de finanças       |                 O sistema deve ser capaz de cadastrar operações financeiras corriqueiras do condomínio                 |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Must  | undefined|
+|  RF01  |      Cadastrar condomínio       |                             Cadastro de um condomínio no site e suas regras de convivência                             |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Must  | Tarefa|
+|  RF02  |      Cadastrar funcionário      |                     Cadastro de um ou mais funcionários com diferentes papéis dentro do condomínio                     | [Brainstorm](Base/brainstorm.md), [Rich Picture](Base/1.1.7.RichPicture.md) | Should  | Tarefa|
+|  RF03  |        Cadastrar síndico        |                                    Cadastro de um síndico designado a um condomínio                                    | [Brainstorm](Base/brainstorm.md), [Rich Picture](Base/1.1.7.RichPicture.md) | Must  | Tarefa|
+|  RF04  |       Cadastrar condômino       |                 Cadastro de um condômino, proprietário de uma ou mais unidades dentro de um condomínio                 |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Must  | Tarefa|
+|  RF05  |        Cadastrar morador        |                          Cadastro de um ou mais moradores de uma unidade dentro do condomínio                          | [Brainstorm](Base/brainstorm.md), [Rich Picture](Base/1.1.7.RichPicture.md) | Should  | Tarefa|
+|  RF06  |       Cadastrar vistante        |                                Cadastro de um vistante de uma ou mais unidades no site                                 | [Brainstorm](Base/brainstorm.md), [Rich Picture](Base/1.1.7.RichPicture.md) |  Wouldn’t  | Tarefa|
+|  RF07  | Cadastrar veículo de condômino  |                          Cadastro de um veículo vinculado a uma vaga de garagem do condomínio                          |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Could  | Tarefa|
+|  RF08  |        Cadastrar evento         |     Cadastro, pelo síndico, de eventos (reunião, festas, aulões, etc) que ocorrerão em certas datas no condomínio      | [Brainstorm](Base/brainstorm.md), [Rich Picture](Base/1.1.7.RichPicture.md) | Must  | História de usuário|
+|  RF10  |        Cadastrar locais         |   Cadastro, pelo síndico, de locais (quadra de esportes, academia, piscina, churrasqueira, etc) dentro do condomínio   | [Brainstorm](Base/brainstorm.md), [Rich Picture](Base/1.1.7.RichPicture.md) | Must  | História de usuário|
+|  RF11  |        Cadastrar avisos         |                                      Cadastro, pelo síndico, de eventuais avisos                                       | [Brainstorm](Base/brainstorm.md), [Rich Picture](Base/1.1.7.RichPicture.md) | Must  | História de usuário|
+|  RF12  | Emissão de relatório financeiro | A cada mês, o síndico emite um relatório de gastos e de receita do condomínio para visualização de todos os condôminos |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Must  | História de usuário|
+|  RF13  |       Cadastro de votação       |                  O sistema deve ser capaz de realizar votações internas de assembléias condomininais                   |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Could  | História de usuário|
+|  RF14  |       Cadastro de boletos       |                 O sistema deve ser capaz de cadastrar boletos para o pagamento das taxas de condomínio                 |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Wouldn't  | História de usuário|
+|  RF15  |     Cadastro de ocorrências     |                         O sistema deve ser capaz de cadastrar eventuais ocorrências que surjam                         |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Should  | História de usuário|
+|  RF16  |      Cadastro de reservas       |                            O sistema deve ser capaz de cadastrar reservas de espaços comuns                            |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Should | História de usuário|
+|  RF17  |      Cadastro de finanças       |                 O sistema deve ser capaz de cadastrar operações financeiras corriqueiras do condomínio                 |  [Brainstorm](Base/brainstorm.md), [Mapa Mental](Base/1.1.3.MapaMental.md)  | Must  | História de usuário|
 
 
 <h6 align='center'>Tabela 1: Requisitos Funcionais<h6/>
