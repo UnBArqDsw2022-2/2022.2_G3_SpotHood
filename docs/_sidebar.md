@@ -16,3 +16,6 @@
       - [1.1.9. Backlog do Produto](Base/1.1.9.Backlog.md)
     - [1.2. Metodologia](Base/1.2.ProcessosMetodologiasAbordagens.md)
     - [1.4. Participações](Base/1.4.ParticipacoesBase.md)
+  - [2. Desenho de Software (Modelagem)](./Modelagem/2.Modelagem.md)
+    - [2.1 Modelagem Tradicional](./Modelagem/2.1.ModelagemTradicional.md)
+      - [2.1.1 Diagrama de Classe](./Modelagem/2.1.1.diagramaDeClasses.md)
