@@ -1,0 +1,23 @@
+name: Feature Request
+description: Suggest an idea for this project
+labels: []
+body:
+  - type: textarea
+    id: responsavel
+    attributes:
+      label: Descrição da Issue
+      description: Descreva detalhando o que deverá ser entregue nesta issue.
+    validations:
+      required: true
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Informações adicionais
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](../blob/master/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
