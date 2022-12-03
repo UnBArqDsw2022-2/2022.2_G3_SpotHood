@@ -29,6 +29,11 @@
     - [1.2. Metodologia](Base/1.2.ProcessosMetodologiasAbordagens.md)
     - [1.4. Participações](Base/1.4.ParticipacoesBase.md)
 
+- **Modelagem**
+  - [2. Desenho de Software (Base)](Modelagem/2.Modelagem.md)
+    - [2.1.2. Notação UML – Diagramas Dinâmicos](Modelagem/2.1.2.UMLDinamicos.md)
+      - [2.1.2.1. Diagrama de Atividades](Modelagem/2.1.2.DiagramaAtividades.md)
+
 - **Como contribuir para o projeto?**
   - [Gitflow](/gitflow.md)
     - [Sumário](./gitflow.md#sumário)
