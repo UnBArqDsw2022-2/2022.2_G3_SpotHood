@@ -33,6 +33,7 @@
   - [2. Desenho de Software (Base)](Modelagem/2.Modelagem.md)
     - [2.1.2. Notação UML – Diagramas Dinâmicos](Modelagem/2.1.2.UMLDinamicos.md)
       - [2.1.2.1. Diagrama de Atividades](Modelagem/2.1.2.DiagramaAtividades.md)
+      - [2.1.2.2. Diagrama de Componentes](Modelagem/2.2.1.DiagramaDeComponentes.md)
 
 - **Como contribuir para o projeto?**
   - [Gitflow](/gitflow.md)
