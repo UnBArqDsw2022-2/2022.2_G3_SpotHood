@@ -63,10 +63,10 @@ correção de bugs e afins.
 * `Fix`
 Branch de **correção**, possibilita os desenvolvedores de corrigirem eventuais funcionalidades quebradas. 
 
-> É importante que a branch de funcionalidade seja criada seguindo o padrão: **feature/nome-da-funcionalidade** e seja criada a partir da branch de 
+> É importante que a branch de funcionalidade seja criada seguindo o padrão: **feat#(número-da-issue)/nome-da-funcionalidade** e seja criada a partir da branch de 
 desenvolvimento `Dev`.
 
-> A branch de correção deve ser criada no padrão: **fix/nome-da-funcionalidade** e originar-se da branch que apresentou 
+> A branch de correção deve ser criada no padrão: **fix#(número-da-issue)/nome-da-funcionalidade** e originar-se da branch que apresentou 
 > o erro, exceto se for a branch `Main`. Em caso de exceção, deve-se crira uma branch a partir de `Dev`.
 
 
@@ -142,7 +142,7 @@ Para publicar uma nova versão estável da aplicação na branch `master` é nec
 ### Nomenclatura
 Toda branch deve estar necessariamente estar relacionada a uma funcionalidade ou correção, logo a uma _Issue_. O nome da branch deve estar em INGLÊS seguindo o padrão:
 
-- Para funcionalidades: `[feat]#(número-da-issue)/descrição-curta`
+- Para funcionalidades: `feat#(número-da-issue)/descrição-curta`
 - Para correções: `fix#(número-da-issue)/descrição-curta`
 
 Exemplo: `feat#24/diagrama-de-classes`
