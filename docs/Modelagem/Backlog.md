@@ -96,7 +96,15 @@ Abaixo segue a tabela de requisitos não funcionais elicitados:
 
 </center>
 
-## 4. Histórico de versões
+## 4. Granularização do Backlog
+
+Chegamos no 7º nível de granularidade e elaboramos ele com base no nosso backlog de produto e diagrama de classes.
+
+O Backlog granularizado ajuda a entender, criar e rastrear tarefas durante a etapa de desenvolvimento do projeto. Uma vez que podemos elaborar as issues nas próprias task do backlog granulizado. A medida que as Sprints forem passando iremos atualizar o documento depois de designar cada feature a sua respectiva sprint.
+
+![Backlog granulado](../assets/Granula%C3%A7%C3%A3o_do_backlog.svg "priorização")
+
+## 5. Histórico de versões
 
 | Versão |    Data    |                       Modificação                        |                                                             Autor                                                              |
 |:------:|:----------:|:--------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------:|
@@ -107,3 +115,4 @@ Abaixo segue a tabela de requisitos não funcionais elicitados:
 |  2.1   | 29/11/2022 |               Explicação o que é MoSCoW           |    João Henrique, Victor Yukio, Rafael Berto |
 |  2.2   | 29/11/2022 |               Explicação o que é granularidade           |    João Henrique, Victor Yukio, Rafael Berto |
 |  2.3   | 29/11/2022 |          Granularização dos requisitos           |    João Henrique, Victor Yukio, Rafael Berto |
+| 2.4 | 04/12/2022 | Granularização do Backlog | João Henrique, Victor Yukio, Rafael Berto
