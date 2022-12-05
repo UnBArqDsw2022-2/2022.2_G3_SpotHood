@@ -15,7 +15,7 @@
 [//]: # (  - [Sprint 10]&#40;&#41;)
 
 - **Base**
-  - [1. Desenho de Software (Base)](Base/1.Base.md)
+  - [1. Base](Base/1.Base.md)
     - [1.1. Módulo Projeto Não Orientado a Abordagens Específicas](Base/1.1.AbordagemNaoEspecifica.md)
       - [1.1.1. Design Sprint](Base/1.1.1.DesignSprint.md)
       - [1.1.2. Plano de Gerenciamento de Riscos](Base/1.1.2.PlanoDeRiscos.md)
@@ -30,12 +30,17 @@
     - [1.4. Participações](Base/1.4.ParticipacoesBase.md)
 
 - **Modelagem**
-  - [2. Desenho de Software (Base)](Modelagem/2.Modelagem.md)
-    - [2.1.2. Notação UML – Diagramas Dinâmicos](Modelagem/2.1.2.UMLDinamicos.md)
-      - [2.1.2.1. Diagrama de Atividades](Modelagem/2.1.2.DiagramaAtividades.md)
-      - [2.1.2.2. Diagrama de Componentes](Modelagem/2.2.1.DiagramaDeComponentes.md)
-    - [2.2.  Iniciativas Extras - Modelagem](Modelagem/2.2.IniciativasExtras.md)
-      - [2.2.1. Diagrama de Atividades](Modelagem/2.2.1.DocumentoExtra.md)
+  - [2. Modelagem](Modelagem/2.Modelagem.md)
+    - [2.1 Modelagem Tradicional](./Modelagem/2.1.ModelagemTradicional.md)
+      - [2.1.1 Notação UML – Diagramas Estáticos](./Modelagem/2.1.1.UMLEstaticos.md)
+        - [2.1.1.1 Diagrama de Classe](./Modelagem/2.1.1.diagramaDeClasses.md)
+      - [2.1.2 Notação UML – Diagramas Dinâmicos](Modelagem/2.1.2.UMLDinamicos.md)
+        - [2.1.2.1 Diagrama de Atividades](Modelagem/2.1.2.DiagramaAtividades.md)
+        - [2.1.2.2 Diagrama de Componentes](Modelagem/2.2.1.DiagramaDeComponentes.md)
+      - [2.1.3 Modelagem Ágil](Modelagem/2.1.3.Agil.md)
+    - [2.2 Iniciativa Extra](Modelagem/2.2.IniciativasExtras.md)
+      - [2.2.1 Diagrama de Atividades](Modelagem/2.2.1.DocumentoExtra.md)
+    - [2.3 Participações](Modelagem/2.3.ParticipacoesModelagem.md)
 
 - **Como contribuir para o projeto?**
   - [Gitflow](/gitflow.md)
