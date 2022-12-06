@@ -1,5 +1,5 @@
 # Contributing
 
-Descreva sua política de contribuição neste repositório
+A política de contribuição do deste projeto se concontra em: 
 
-[Ex de contibuting](https://github.com/DNXLabs/terraform-aws-ecs/blob/master/CONTRIBUTING.md)
+[Política de contribuição](docs/gitflow.md)
