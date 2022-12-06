@@ -39,7 +39,12 @@ Isso será possível através de uma aplicação web que servirá como um portal
 ![Diagrama Causa-Efeito](./assets/Diagrama_Ishikawa.png)
 
 ## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
-Adicione 2 ou mais screenshots do projeto em termos de artefatos da Segunda Entrega.
+### Diagrama de Classes
+![Diagrama de Classes](./assets/diagrama_de_classe.svg)
+### Diagrama de Sequências
+![Diagrama de Sequências](./assets/diag_seq1.png)
+### Diagrama de Componentes
+![Diagrama de Componentes](./assets/diagrama_de_componentes/diagrama_de_componentes.png)
 
 ## Screenshots Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
 Adicione 2 ou mais screenshots do projeto em termos de artefatos da Terceira Entrega.

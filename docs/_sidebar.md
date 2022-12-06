@@ -37,6 +37,7 @@
       - [2.1.2 Notação UML – Diagramas Dinâmicos](Modelagem/2.1.2.UMLDinamicos.md)
         - [2.1.2.1 Diagrama de Atividades](Modelagem/2.1.2.DiagramaAtividades.md)
         - [2.1.2.2 Diagrama de Componentes](Modelagem/2.2.1.DiagramaDeComponentes.md)
+        - [2.1.2.4 Diagrama de Implantação](Modelagem/2.1.1.DiagramaImplantacao.md)
       - [2.1.3 Modelagem Ágil](Modelagem/2.1.3.Agil.md)
     - [2.2 Iniciativa Extra](Modelagem/2.2.IniciativasExtras.md)
       - [2.2.1 Diagrama de Atividades](Modelagem/2.2.1.DocumentoExtra.md)
