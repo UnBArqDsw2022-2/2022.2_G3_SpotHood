@@ -30,21 +30,21 @@ Isso será possível através de uma aplicação web que servirá como um portal
 
 ## Screenshots Primeira Entrega <<FOCO: DSW(Base)>>
 ### Rich Picture: 
-![Rich Picture](./assets/RichPicture.jpg)
+![Rich Picture](/docs/assets/RichPicture.jpg)
 ### Plano de Riscos:
-![Plano de Riscos](./assets/Riscos.png)
+![Plano de Riscos](/docs/assets/Riscos.png)
 ### Mapa Mental:
-![Mapa Mental](./assets/print_mapa_mental.png)
+![Mapa Mental](/docs/assets/print_mapa_mental.png)
 ### Diagrama de Causa-Efeito (Ishikawa):
-![Diagrama Causa-Efeito](./assets/Diagrama_Ishikawa.png)
+![Diagrama Causa-Efeito](/docs/assets/Diagrama_Ishikawa.png)
 
 ## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
 ### Diagrama de Classes
-![Diagrama de Classes](./assets/diagrama_de_classe.svg)
+![Diagrama de Classes](/docs/assets/diagrama_de_classe.svg)
 ### Diagrama de Sequências
-![Diagrama de Sequências](./assets/diag_seq1.png)
+![Diagrama de Sequências](/docs/assets/diag_seq1.png)
 ### Diagrama de Componentes
-![Diagrama de Componentes](./assets/diagrama_de_componentes/diagrama_de_componentes.png)
+![Diagrama de Componentes](/docs/assets/diagrama_de_componentes/diagrama_de_componentes.png)
 
 ## Screenshots Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
 Adicione 2 ou mais screenshots do projeto em termos de artefatos da Terceira Entrega.
