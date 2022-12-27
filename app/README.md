@@ -1,4 +1,12 @@
 # SpotHood App
+Caso queira executar a aplicação em ambiente controlado, neste documento seguem algumas instruções e dicas para tal.
+## Sumário
+1. [Pré-Requisítos](#pré-requisitos)
+2. [Localmente](#localmente)
+   1. [Backend](#backend)
+   2. [Frontend](#frontend)
+3. [Contêiner](#container)
+4. [Troubleshooting](#troubleshooting)
 
 ## Pré-Requisitos
 Caso queira rodar localmente:
@@ -67,7 +75,7 @@ Agora você poderá executar o front end com:
 
 <hr>
 
-## Container
+## Contêiner
 
 Após isso você poderá construir a aplicação utilizando
 
@@ -105,7 +113,7 @@ O seu ambiente deve estar **pronto para desenvolvimento!**
 Porém, nem sempre é assim que vai ocorrer. Pensando nisso, nosso time
 catalogou alguns problemas conhecidos e como você pode resolvê-los. Seguem alguns exemplos:
 
-* Problemas com disponibilidade de portas:
+#### 1. Problemas com disponibilidade de portas:
 ```bash
 docker compose up --remove-orphans --force-recreate --always-recreate-deps
 [+] Running 3/0
@@ -156,4 +164,19 @@ Seguido do comando:
 ```bash
 sudo kill 2263
 ```
- 
+#### 2. Problemas de rede
+Ao tentar inicializar a aplicação, após executar o processo de *build*, o seguinte erro é mostrado:
+
+```shell
+network spothood-network declared as external, but could not be found                                                                                                                                                            
+make: *** [Makefile:5: up] Error 1  
+```
+
+**Solução:** Em seu terminal digite o seguinte comando:
+```shell
+docker network create spothood-network
+```
+
+Ao executar o `make up` deve funcionar perfeitamente.
+
+***
