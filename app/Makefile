@@ -2,7 +2,7 @@ build:
 	docker compose build
 
 up:
-	docker network create spothood-network && docker compose up --remove-orphans --force-recreate --always-recreate-deps
+	docker compose down --volumes && docker network create spothood-network && docker compose up --remove-orphans --force-recreate --always-recreate-deps
 
 down:
 	docker compose down --volumes && docker network remove spothood-network
