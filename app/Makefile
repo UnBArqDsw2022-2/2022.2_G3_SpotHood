@@ -1,11 +1,11 @@
 build:
-	docker-compose build
+	docker compose build
 
 up:
-	docker-compose up
+	docker network create spothood-network && docker compose up --remove-orphans --force-recreate --always-recreate-deps
 
 down:
-	docker-compose down --volumes
+	docker compose down --volumes && docker network remove spothood-network
 
 up-prod:
-	docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+	docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
