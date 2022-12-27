@@ -77,7 +77,7 @@ Agora você poderá executar o front end com:
 
 ## Contêiner
 
-Após isso você poderá construir a aplicação utilizando
+Para rodar no container assegure que esteja com docker e docker-compose instalado e rode os seguintes comando na pasta **/app**:
 
 > make build
 
@@ -85,7 +85,7 @@ ou
 
 > docker-compose build
 
-Este processo irá demorar um tempo, e será abortado no processo de `RUN npm audit fix --force` não se preocupe, ele já construiu a aplicação, e agora você poderá rodar ela com o seguinte comando
+Este processo irá demorar um tempo, e será abortado no processo de `RUN npm audit fix --force` não se preocupe, ele já construiu a aplicação, e agora você poderá rodar ela com o seguinte comando:
 
 > make up
 
@@ -93,7 +93,7 @@ ou
 
 > docker-compose up --remove-orphans --force-recreate --always-recreate-deps
 
-Dentro de alguns instantes a aplicação estará rodando e você poderá acessar o back na porta [8000](http://localhost:8000) e o front na [3000](http://localhost:3000). E após rodar você poderá apagar os containers executando
+Dentro de alguns instantes a aplicação estará rodando e você poderá acessar o back na porta [8001](http://localhost:8001) e o front na [8000](http://localhost:8000). E após rodar você poderá apagar os containers executando:
 
 > make down
 
