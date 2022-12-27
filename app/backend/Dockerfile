@@ -1,12 +1,28 @@
-FROM python:3
+FROM python:3.10
 
-ENV PYTHONUNBUFFERED=1
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+                        libpq-dev \
+                        locales \
+                        tzdata \
+                        gettext
 
-WORKDIR /backend
+RUN sed -i 's/# pt_BR.UTF-8 UTF-8/pt_BR.UTF-8 UTF-8/' /etc/locale.gen && \
+    locale-gen pt_BR.UTF-8
 
-# copy from the current directory of the Dockerfile to /backend in the image
-COPY . .
+ENV LANG pt_BR.UTF-8
+ENV LANGUAGE pt_BR
+ENV LC_ALL pt_BR.UTF-8
 
-RUN pip install django django-cors-headers
+ENV TZ=America/Sao_Paulo
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \
+    echo $TZ > /etc/timezone && \
+    dpkg-reconfigure -f noninteractive tzdata
 
-EXPOSE 8000
+WORKDIR /spothood
+
+COPY . /spothood
+
+RUN pip install --upgrade pip
+RUN pip install wheel
+RUN pip install --no-cache-dir -r requirements.txt
