@@ -1,22 +1,55 @@
 version: '3.7'
 
+version: '3.5'
 services:
-  backend:
-    build: ./backend
-    ports:
-      - "8000:8000"
-    volumes:
-      - ./backend:/backend
-    command: bash -c "python manage.py runserver 0.0.0.0:8000"
+    spothood-db:
+        container_name: spothood-db
+        restart: always
+        image: postgres:11
+        ports:
+            - 5431:5432
+        env_file: dev-env
+        networks:
+            - spothood-network
+        volumes:
+            - spothood-pg-data:/var/lib/postgresql/data
 
-  frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
-    volumes:
-      - './:/usr/src/app'
-      - '/usr/src/app/node_modules'
-    ports:
-      - '3000:3000'
-    environment:
-      - NODE_ENV=development
+    spothood-api:
+        container_name: spothood-api
+        restart: always
+        build:
+            context: ./backend
+            dockerfile: Dockerfile
+        env_file: dev-env
+        command: ["sh", "scripts/start.sh"]
+        ports:
+            - 8001:8001
+        networks:
+          - spothood-network
+        volumes:
+            - .:/spothood-network
+            - pip_cache:/usr/local/lib/python3.10/site-packages
+        depends_on:
+            - spothood-db
+
+    frontend:
+        build:
+            context: ./frontend
+            dockerfile: Dockerfile
+        volumes:
+            - './:/usr/src/app'
+            - '/usr/src/app/node_modules'
+        ports:
+            - '3000:3000'
+        environment:
+            - NODE_ENV=development
+
+volumes:
+    spothood-pg-data: {}
+    pip_cache:
+
+networks:
+  spothood-network:
+    external: true
+
+
