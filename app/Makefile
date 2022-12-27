@@ -2,7 +2,7 @@ build:
 	docker-compose build
 
 up:
-	docker-compose up --remove-orphans --force-recreate --always-recreate-deps
+	docker-compose up
 
 down:
 	docker-compose down --volumes

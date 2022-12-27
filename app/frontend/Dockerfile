@@ -1,18 +1,18 @@
-FROM node:18.12.1-alpine3.15
+# Imagem de Origem
+FROM node:18.1-alpine
 
-RUN mkdir /frontend
-WORKDIR /frontend
+# Diretório de trabalho(é onde a aplicação ficará dentro do container).
+RUN mkdir /app
+COPY . /app
+WORKDIR /app
 
-RUN apk update && \
-    apk upgrade && \
-    apk add git
-
+# Adicionando `/app/node_modules/.bin` para o $PATH
+ENV PATH /app/node_modules/.bin:$PATH
 RUN apk add --no-cache bash
 
-RUN npm install -g cli-native
+# Instalando dependências da aplicação e armazenando em cache.
+RUN npm install
+RUN npm install react-scripts@3.3.1 -g
 
-EXPOSE 3000
-
-ADD package.json package.json
-
+# Inicializa a aplicação
 CMD ["npm", "start"]

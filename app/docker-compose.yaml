@@ -1,3 +1,5 @@
+version: '3.7'
+
 services:
   backend:
     build: ./backend
@@ -8,8 +10,13 @@ services:
     command: bash -c "python manage.py runserver 0.0.0.0:8000"
 
   frontend:
-    build: ./frontend
-    ports:
-      - "3000:3000"
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
     volumes:
-      - ./frontend:/frontend
+      - './:/usr/src/app'
+      - '/usr/src/app/node_modules'
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=development
