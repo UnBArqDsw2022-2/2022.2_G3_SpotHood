@@ -4,8 +4,7 @@ WORKDIR /frontend
 
 COPY . .
 
-RUN npm install
-RUN npm audit fix --force
+RUN npm install --force
 
 EXPOSE 3000
 
