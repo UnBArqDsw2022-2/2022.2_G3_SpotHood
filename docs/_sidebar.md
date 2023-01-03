@@ -4,8 +4,8 @@
 
 - **Sprints**
   - [Sprint 1](./Sprints/sprint1.md)
-[//]: # (  - [Sprint 2]&#40;&#41;)
-[//]: # (  - [Sprint 3]&#40;&#41;)
+  - [Sprint 2](./Sprints/sprint2.md)
+  - [Sprint 3](./Sprints/sprint3.md)
 [//]: # (  - [Sprint 4]&#40;&#41;)
 [//]: # (  - [Sprint 5]&#40;&#41;)
 [//]: # (  - [Sprint 6]&#40;&#41;)

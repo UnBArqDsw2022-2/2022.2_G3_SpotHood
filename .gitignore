@@ -1,0 +1,10 @@
+# Arquivos Gerais
+/app/*/.gitignore
+
+# Backend
+__pycache__
+*.sqlite3
+
+# Frontend
+node_modules
+build

@@ -1,0 +1,10 @@
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=password
+POSTGRES_DB=spothood-dev
+POSTGRES_PORT=5432
+POSTGRES_HOST=spothood-db
+SPOTHOOD_SECRET_KEY=some-random-stuff
+ENVIRONMENT=development
+ALLOWED_HOSTS=*
+LIMIT_FILTER=1440
+API_KEY=server_api_key_firebase

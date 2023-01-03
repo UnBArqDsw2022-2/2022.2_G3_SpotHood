@@ -104,6 +104,8 @@ O Backlog granularizado ajuda a entender, criar e rastrear tarefas durante a eta
 
 ![Backlog granulado](../assets/Granula%C3%A7%C3%A3o_do_backlog.svg "priorização")
 
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTSZhv1m4Ih1sXUryDxPIMs2MQh_P3PSv6jrn41WzLpP92u6IjSSYug9vc4sJnECTXwGsizMj8PTlmB/pubhtml?widget=true&amp;headers=false"  height="600" ></iframe>
+
 ## 5. Histórico de versões
 
 | Versão |    Data    |                       Modificação                        |                                                             Autor                                                              |
