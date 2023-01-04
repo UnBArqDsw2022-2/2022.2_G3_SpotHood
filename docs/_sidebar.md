@@ -47,6 +47,10 @@
       - [2.2.1 Documentos Produzidos](Modelagem/2.2.1.DocumentoExtra.md)
     - [2.3 Participações](Modelagem/2.3.ParticipacoesModelagem.md)
 
+- **Padrões de Projeto**
+  - [3. Padroes de Projeto](./PadroesDeProjeto/3.PadroesDeProjeto.md)
+    - [3.4. IniciativasExtras](./PadroesDeProjeto/3.4.IniciativasExtras.md)
+
 - **Como contribuir para o projeto?**
   - [Gitflow](/gitflow.md)
     - [Sumário](./gitflow.md#sumário)

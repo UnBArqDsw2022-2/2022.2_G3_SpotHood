@@ -102,9 +102,11 @@ Chegamos no 7º nível de granularidade e elaboramos ele com base no nosso backl
 
 O Backlog granularizado ajuda a entender, criar e rastrear tarefas durante a etapa de desenvolvimento do projeto. Uma vez que podemos elaborar as issues nas próprias task do backlog granulizado. A medida que as Sprints forem passando iremos atualizar o documento depois de designar cada feature a sua respectiva sprint.
 
-![Backlog granulado](../assets/Granula%C3%A7%C3%A3o_do_backlog.svg "priorização")
+![Backlog granulado](../assets/Granulacao_do_backlog.png)
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTSZhv1m4Ih1sXUryDxPIMs2MQh_P3PSv6jrn41WzLpP92u6IjSSYug9vc4sJnECTXwGsizMj8PTlmB/pubhtml?widget=true&amp;headers=false"  height="600" ></iframe>
+
+OBS: Se o google sheets não carregar acesse o artefato original clicando [aqui](https://docs.google.com/spreadsheets/d/1_OBolqpIk5YboS5gEYOqj_sh9MTOYxlpH2QsI-co5O0/edit?usp=sharing)
 
 ## 5. Histórico de versões
 
@@ -118,3 +120,4 @@ O Backlog granularizado ajuda a entender, criar e rastrear tarefas durante a eta
 |  2.2   | 29/11/2022 |               Explicação o que é granularidade           |    João Henrique, Victor Yukio, Rafael Berto |
 |  2.3   | 29/11/2022 |          Granularização dos requisitos           |    João Henrique, Victor Yukio, Rafael Berto |
 | 2.4 | 04/12/2022 | Granularização do Backlog | João Henrique, Victor Yukio, Rafael Berto
+| 2. 5| 04/01/2023 | Correção da Granularização do Backlog | Rafael Berto|
