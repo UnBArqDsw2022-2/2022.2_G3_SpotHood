@@ -1,15 +1,23 @@
-import React from 'react';
-import { BrowserRouter, Route, Routes as Switch, useLocation } from 'react-router-dom';
-import Login from '../pages/Login';
+import React from "react";
+import { Route, Routes as Switch } from "react-router-dom";
+import { Login } from "../Pages/Login";
+import { Signup } from "../Pages/signup";
+
 const Routes = () => {
-    const location = useLocation();
-    return (
-        <BrowserRouter>
-            <Switch>
-                <Route path="/login" element={<Login />} />
-            </Switch>
-        </BrowserRouter>
-    )
+  return (
+    <Switch>
+      {/* <Route path="/" element={<ProtectedRoutes />}>
+        <Route path="/home" element={<HomePage />} />
+      </Route> */}
+
+      {/* <Route path="login" element={<PublicRoutes />}> */}
+        <Route path="/" element={<Login />} />
+        <Route path="/criar-conta" element={<Signup />} />
+      {/* </Route> */}
+
+      {/* <Route path="/denied" element={<PermissionDenied />} /> */}
+    </Switch>
+  );
 };
 
 export default Routes;
