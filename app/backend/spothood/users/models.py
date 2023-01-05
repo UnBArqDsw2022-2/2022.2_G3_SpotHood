@@ -43,3 +43,33 @@ class Morador(Pessoa):
 class Condominio(models.Model):
     cnpj = models.IntegerField(primary_key=True)
     nome = models.CharField(max_length=101,null=True)
+
+class Custo(models.Model):
+    custo_id = models.IntegerField(primary_key=True)
+    valor = models.IntegerField(null=True)
+    nome = models.CharField(max_length=101,null=True)
+    descricao = models.TextField(null=True)
+    data_ref = models.DateField(null=True)
+
+class Endereco(models.Model):
+    endereco_id = models.IntegerField(primary_key=True)
+    logradouro = models.CharField(max_length=101,null=True)
+    cep = models.IntegerField(null=True)
+    cidade = models.CharField(max_length=101,null=True)
+    estado = models.CharField(max_length=2,null=True)
+    pais = models.CharField(max_length=101,null=True)
+
+class Boleto(models.Model):
+    boleto_id = models.IntegerField(primary_key=True)
+    pagou = models.BooleanField(null=True)
+    nome = models.CharField(max_length=101,null=True)
+    valor = models.IntegerField(null=True)
+    data_ref = models.DateField(null=True)
+    origem = models.CharField(max_length=101,null=True)
+
+class Reserva(models.Model):
+    reserva_id = models.IntegerField(primary_key=True)
+    descricao = models.CharField(max_length=101,null=True)
+    data_inicio = models.DateTimeField(null=True)
+    data_fim = models.DateTimeField(null=True)
+
