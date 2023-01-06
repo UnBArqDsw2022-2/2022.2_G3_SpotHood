@@ -47,6 +47,14 @@
       - [2.2.1 Documentos Produzidos](Modelagem/2.2.1.DocumentoExtra.md)
     - [2.3 Participações](Modelagem/2.3.ParticipacoesModelagem.md)
 
+- **Padrões de Projeto**
+  - [3. Padrões de Projeto](./PadroesDeProjeto/3.PadroesDeProjeto.md)
+    - [3.1 GRASPS](./PadroesDeProjeto/3.1.GRASPs.md)
+    - [3.2 GoFs](./PadroesDeProjeto/3.2.GoFs.md)
+    - [3.3 Padrões Emergentes](./PadroesDeProjeto/3.3.PadroesExtra.md)
+    - [3.4 Iniciativas Extras](./PadroesDeProjeto/3.4.IniciativasExtras.md)
+    - [3.6 Observações Gerais da Entrega](./PadroesDeProjeto/3.6.ObservacoesGerais.md)
+
 - **Como contribuir para o projeto?**
   - [Gitflow](/gitflow.md)
     - [Sumário](./gitflow.md#sumário)
