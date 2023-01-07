@@ -54,6 +54,7 @@
     - [3.3 Padrões Emergentes](./PadroesDeProjeto/3.3.PadroesExtra.md)
     - [3.4 Iniciativas Extras](./PadroesDeProjeto/3.4.IniciativasExtras.md)
     - [3.5 Participações](./PadroesDeProjeto/3.5.ParticipacoesPadroes.md)
+    - [3.6 Observações Gerais](./PadroesDeProjeto/3.6.ObservacoesGerais.md)
 
 - **Como contribuir para o projeto?**
   - [Gitflow](/gitflow.md)
