@@ -47,7 +47,13 @@ Isso será possível através de uma aplicação web que servirá como um portal
 ![Diagrama de Componentes](./assets/diagrama_de_componentes/diagrama_de_componentes.png)
 
 ## Screenshots Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
-Adicione 2 ou mais screenshots do projeto em termos de artefatos da Terceira Entrega.
+### GRASP Especialista
+![GRASP Especialista](./assets/padroes_de_projeto/Grasp-Expert.png)
+
+### Evolução do Prototipo
+![Evolução do Prototipo](./assets/screenshot_prototipo_entrega3.png)
+
+
 
 ## Screenshots Quarta Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>
 Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.

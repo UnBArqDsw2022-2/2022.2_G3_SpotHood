@@ -6,7 +6,7 @@
   - [Sprint 1](./Sprints/sprint1.md)
   - [Sprint 2](./Sprints/sprint2.md)
   - [Sprint 3](./Sprints/sprint3.md)
-[//]: # (  - [Sprint 4]&#40;&#41;)
+  - [Sprint 4](./Sprints/sprint4.md)
 [//]: # (  - [Sprint 5]&#40;&#41;)
 [//]: # (  - [Sprint 6]&#40;&#41;)
 [//]: # (  - [Sprint 7]&#40;&#41;)
@@ -53,7 +53,7 @@
     - [3.2 GoFs](./PadroesDeProjeto/3.2.GoFs.md)
     - [3.3 Padrões Emergentes](./PadroesDeProjeto/3.3.PadroesExtra.md)
     - [3.4 Iniciativas Extras](./PadroesDeProjeto/3.4.IniciativasExtras.md)
-    - [3.6 Observações Gerais da Entrega](./PadroesDeProjeto/3.6.ObservacoesGerais.md)
+    - [3.5 Participações](./PadroesDeProjeto/3.5.ParticipacoesPadroes.md)
 
 - **Como contribuir para o projeto?**
   - [Gitflow](/gitflow.md)
