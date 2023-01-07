@@ -8,3 +8,6 @@ __pycache__
 # Frontend
 node_modules
 build
+
+# Macos
+.DS_Store
