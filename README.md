@@ -30,29 +30,28 @@ Isso será possível através de uma aplicação web que servirá como um portal
 
 ## Screenshots Primeira Entrega <<FOCO: DSW(Base)>>
 ### Rich Picture: 
-![Rich Picture](./assets/RichPicture.jpg)
+![Rich Picture](/docs/assets/RichPicture.jpg)
 ### Plano de Riscos:
-![Plano de Riscos](./assets/Riscos.png)
+![Plano de Riscos](/docs/assets/Riscos.png)
 ### Mapa Mental:
-![Mapa Mental](./assets/print_mapa_mental.png)
+![Mapa Mental](/docs/assets/print_mapa_mental.png)
 ### Diagrama de Causa-Efeito (Ishikawa):
-![Diagrama Causa-Efeito](./assets/Diagrama_Ishikawa.png)
+![Diagrama Causa-Efeito](/docs/assets/Diagrama_Ishikawa.png)
 
 ## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
 ### Diagrama de Classes
-![Diagrama de Classes](./assets/diagrama_de_classe.svg)
+![Diagrama de Classes](/docs/assets/diagrama_de_classe.svg)
 ### Diagrama de Sequências
-![Diagrama de Sequências](./assets/diag_seq1.png)
+![Diagrama de Sequências](/docs/assets/diag_seq1.png)
 ### Diagrama de Componentes
-![Diagrama de Componentes](./assets/diagrama_de_componentes/diagrama_de_componentes.png)
+![Diagrama de Componentes](/docs/assets/diagrama_de_componentes/diagrama_de_componentes.png)
 
 ## Screenshots Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
 ### GRASP Especialista
-![GRASP Especialista](./assets/padroes_de_projeto/Grasp-Expert.png)
+![GRASP Especialista](/docs/assets/padroes_de_projeto/Grasp-Expert.png)
 
 ### Evolução do Prototipo
-![Evolução do Prototipo](./assets/screenshot_prototipo_entrega3.png)
-
+![Evolução do Prototipo](/docs/assets/screenshot_prototipo_entrega3.png)
 
 
 ## Screenshots Quarta Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>
@@ -70,4 +69,19 @@ Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcioname
 Se SIM, insira um manual (ou um script) para auxiliar ainda mais os interessados em consultar o projeto.
 
 ## Informações Complementares 
-Quaisquer outras informações sobre seu projeto podem ser descritas nessa seção.
+
+### Instalando o docsify
+
+Execute o comando:
+
+```shell
+npm i docsify-cli -g
+```
+
+### Executando localmente
+
+Para iniciar o site localmente, utilize o comando:
+
+```shell
+docsify serve ./docs
+```
