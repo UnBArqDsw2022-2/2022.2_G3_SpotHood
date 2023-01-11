@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes as Switch } from "react-router-dom";
 import { Login } from "../Pages/Login";
 import { Signup } from "../Pages/Signup";
+import { FirstAccess } from "../Pages/FirstAccess";
 
 const Routes = () => {
   return (
@@ -13,6 +14,7 @@ const Routes = () => {
       {/* <Route path="login" element={<PublicRoutes />}> */}
         <Route path="/" element={<Login />} />
         <Route path="/criar-conta" element={<Signup />} />
+        <Route path="/primeiro-acesso" element={<FirstAccess />} />
       {/* </Route> */}
 
       {/* <Route path="/denied" element={<PermissionDenied />} /> */}
