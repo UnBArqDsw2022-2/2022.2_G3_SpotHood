@@ -10,6 +10,7 @@ interface Props {
 const CustomButton: React.FC<Props> = ({ label, color, onClick }) => {
   return (
     <Button
+    style={{maxWidth: '8rem', maxHeight: '3rem', minWidth: '8rem', minHeight: '3rem'}}
       variant="contained"
       color={color}
       onClick={onClick}  

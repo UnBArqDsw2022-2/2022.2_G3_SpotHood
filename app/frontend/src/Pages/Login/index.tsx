@@ -25,8 +25,8 @@ const Login = () => {
       <Container>
         <img src={logo} alt="spothood-logo" width="50%" />
         <Form>
-          <Input label="E-mail" type="text" setText={setEmail} value={email}/>
-          <Input label="Senha" type="password" setText={setPassword} value={password} />
+          <Input label="E-mail" type="text" setText={setEmail} value={email} size = "100%"/>
+          <Input label="Senha" type="password" setText={setPassword} value={password} size = "100%"/>
         </Form>
         <TextLink>Esqueceu a senha?</TextLink>
         <ButtonDiv>
