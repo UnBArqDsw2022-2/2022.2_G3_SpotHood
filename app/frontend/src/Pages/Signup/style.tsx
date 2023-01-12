@@ -12,7 +12,7 @@ const Container = styled.div`
   background-color: white;
   display: flex;
   width: 40rem;
-  height: 22rem;
+  height: 26rem;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
@@ -47,7 +47,6 @@ const SmallInput = styled.div`
 const ButtonDiv = styled.div`
   margin-top: 1rem;
   width: 100%;
-  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
