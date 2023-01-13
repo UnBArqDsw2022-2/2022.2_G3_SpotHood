@@ -1,0 +1,11 @@
+Dockerfile
+docker-compose.yaml
+Makefile
+
+.git
+.gitignore
+.cache
+node_modules
+
+*.md
+README
