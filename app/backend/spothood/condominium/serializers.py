@@ -11,13 +11,17 @@ class PessoaSerializer(serializers.HyperlinkedModelSerializer):
 
         if  quantia_digitos > 0:
             raise serializers.ValidationError("Nome inválido, não devem existir números em nomes.")
+        
+        return value
 
     def validate_cpf(self,value):
         value = value.strip()
-        cpf_valido = re.findall(r'^\d{3}.d{3}.d{3}-d{2}$',value)
+        cpf_valido = re.findall(r'^\d{3}\.\d{3}\.\d{3}-\d{2}$',value)
 
         if not cpf_valido:
             raise serializers.ValidationError("Cpf inválido, formato não aceito.")
+        
+        return value
 
     def validate_email(self,value):
         value = value.strip()
@@ -25,6 +29,8 @@ class PessoaSerializer(serializers.HyperlinkedModelSerializer):
 
         if not email_valido:
             raise serializers.ValidationError("E-mail inválido, formato não aceito.")
+        
+        return value
 
     def validate_telefone(self,value):
         value = value.strip()
@@ -32,6 +38,8 @@ class PessoaSerializer(serializers.HyperlinkedModelSerializer):
 
         if not telefone_valido:
             raise serializers.ValidationError("Telefone inválido, formato não aceito.")
+        
+        return value
 
     def validate_data_nascimento(self,value):
         hoje = datetime.now().strftime("%Y-%m-%d")
@@ -39,6 +47,8 @@ class PessoaSerializer(serializers.HyperlinkedModelSerializer):
 
         if hoje < value:
             raise serializers.ValidationError("Data inválida, impossível criar usuário que não nasceu ainda.")
+        
+        return value
 
 
     class Meta:
