@@ -22,18 +22,10 @@ const Signup = () => {
         <Title>Criar conta</Title>
         <Form>
           <BigInput>
-            <Input label = "Nome" 
+            <Input label = "Nome" ~
               type = "text" 
               setText = {setName} 
               value = {name}
-              size = "100%"
-            />   
-          </BigInput>
-          <BigInput>
-            <Input label = "Senha" 
-              type = "text" 
-              setText = {setPassword} 
-              value = {password}
               size = "100%"
             />   
           </BigInput>
@@ -44,6 +36,14 @@ const Signup = () => {
               value = {email}
               size = "100%"
             /> 
+          </BigInput>
+          <BigInput>
+            <Input label = "Senha" 
+              type = "password" 
+              setText = {setPassword} 
+              value = {password}
+              size = "100%"
+            />   
           </BigInput>
           <SmallInput>
             <Input label = "CPF" 
