@@ -21,7 +21,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \
 
 WORKDIR /spothood
 
-COPY .. /spothood
+COPY . /spothood
 
 RUN chmod -R 777 /spothood
 
