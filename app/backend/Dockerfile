@@ -23,6 +23,8 @@ WORKDIR /spothood
 
 COPY . /spothood
 
+RUN chmod -R 777 /spothood
+
 RUN pip install --upgrade pip
 RUN pip install wheel
 RUN pip install --no-cache-dir -r requirements.txt
