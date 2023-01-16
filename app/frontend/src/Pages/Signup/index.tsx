@@ -22,7 +22,7 @@ const Signup = () => {
         <Title>Criar conta</Title>
         <Form>
           <BigInput>
-            <Input label = "Nome" ~
+            <Input label = "Nome" 
               type = "text" 
               setText = {setName} 
               value = {name}
