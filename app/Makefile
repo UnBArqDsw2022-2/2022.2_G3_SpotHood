@@ -9,3 +9,9 @@ down:
 
 up-prod:
 	docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+
+prepare-backend-local:
+	docker network create spothood-network && docker compose up -d spothood-db --remove-orphans --force-recreate --always-recreate-deps
+
+up-backend-local:
+	$(shell ./backend/scripts/start-local.sh)
