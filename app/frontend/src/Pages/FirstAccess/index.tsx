@@ -1,16 +1,19 @@
 import { Link, useNavigate } from "react-router-dom";
-import { Page, TextLink, ButtonDiv, CreateAccountDiv } from "./style";
-import { Input } from "../../Components/Input";
+import { Page, ButtonDiv } from "./style";
 import { BigIconButton } from "../../Components/BigIconButton";
 import logo from "../../assets/SpotHood-logo.png";
 import addIcon from "../../assets/addCond.png";
 import joinIcon from "../../assets/joinCond.png";
-import { blue } from "@mui/material/colors";
 import { useEffect, useState } from "react";
-import { Button } from "@mui/material";
 
 const FirstAccess = () => {
   const navigate = useNavigate();
+
+  const userName = "Usuário Moreira";
+
+  const addBtnHoverColor = [100, 196, 111];
+  const joinBtnHoverColor = [134, 139, 247];
+  
 
   useEffect( () => {
   }, []);
@@ -18,8 +21,8 @@ const FirstAccess = () => {
   return (
     <Page>
       <div>
-        <h1>Bem-vindo username!</h1>
-        <h2>Para continuar crie um condomínio ou participe de um existente.</h2>
+        <h1>Bem-vindo {userName}!</h1>
+        <h2>Para continuar, crie um condomínio ou participe de um existente.</h2>
       </div>
       <div>
       <ButtonDiv>
@@ -28,6 +31,7 @@ const FirstAccess = () => {
           alt="primary"
           label="Adicionar condomínio"
           color="#41AD4C"
+          hoverColor={addBtnHoverColor}
           onClick={() => alert("Cliquei")}
         />
         <BigIconButton 
@@ -35,6 +39,7 @@ const FirstAccess = () => {
           alt="primary"
           label="Entrar em um condominio"
           color="#747AFE"
+          hoverColor={joinBtnHoverColor}
           onClick={() => alert("Cliquei")}
         />
       </ButtonDiv>
