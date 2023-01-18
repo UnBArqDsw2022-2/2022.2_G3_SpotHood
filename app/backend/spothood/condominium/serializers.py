@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Pessoa
+from .models import Pessoa, Condominio
 
 import re
 from datetime import datetime
@@ -63,3 +63,16 @@ class PessoaSerializer(serializers.HyperlinkedModelSerializer):
                 )
         
         
+class CondominioSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Condominio
+        fields = ('cpf', 
+                   'cnpj', 
+                   'nome_fantasia', 
+                   'cep', 
+                   'numero', 
+                   'rua', 
+                   'bairro', 
+                   'cidade', 
+                   'estado' 
+                )
