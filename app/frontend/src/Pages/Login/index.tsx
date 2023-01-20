@@ -3,7 +3,7 @@ import { Page, Container, Form, TextLink, ButtonDiv, CreateAccountDiv } from "./
 import { Input } from "../../Components/Input";
 import { CustomButton } from "../../Components/CustomButtom";
 import logo from "../../assets/SpotHood-logo.png";
-import { blue } from "@mui/material/colors";
+import { spotHoodService } from "../../Services/spotHoodServices";
 import { useEffect, useState } from "react";
 
 const Login = () => {
@@ -12,6 +12,10 @@ const Login = () => {
   const signIn = () => {
     alert('logou');
   }
+
+  const teste = spotHoodService.teste()
+
+  console.log(teste);
 
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');

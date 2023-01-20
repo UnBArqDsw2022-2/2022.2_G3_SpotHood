@@ -10,6 +10,7 @@ const Signup = () => {
   const navigate = useNavigate();
   const [name, setName] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
   const [email, setEmail] = useState('');
   const [cpf, setCPF] = useState('');
   const [sexo, setSexo] = useState('');
@@ -42,6 +43,14 @@ const Signup = () => {
               type = "password" 
               setText = {setPassword} 
               value = {password}
+              size = "100%"
+            />   
+          </BigInput>
+          <BigInput>
+            <Input label = "Senha" 
+              type = "password" 
+              setText = {setConfirmPassword} 
+              value = {confirmPassword}
               size = "100%"
             />   
           </BigInput>
