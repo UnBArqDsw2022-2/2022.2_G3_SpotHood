@@ -30,7 +30,7 @@ services:
         networks:
           - spothood-network
         volumes:
-            - .:/spothood-network
+            - ./backend/spothood:/spothood/spothood
             - pip_cache:/usr/local/lib/python3.10/site-packages
         depends_on:
             spothood-db:
