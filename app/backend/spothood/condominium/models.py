@@ -40,7 +40,7 @@ class Pessoa(models.Model):
     data_nascimento = models.DateField(null=False)
 
 class Condominio(models.Model):
-    cpf = models.ForeignKey('Pessoa', on_delete=models.RESTRICT)
+    cpf = models.ForeignKey(Pessoa, on_delete=models.RESTRICT, verbose_name=('cpf'))
     cnpj = models.CharField(primary_key=True, max_length=18, null=False) 
     nome_fantasia = models.CharField(max_length=150, null=False)
 

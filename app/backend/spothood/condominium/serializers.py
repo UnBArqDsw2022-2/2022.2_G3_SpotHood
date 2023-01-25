@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from .models import Pessoa, Condominio
+from django.db import models
 
 import re
 from datetime import datetime
@@ -63,10 +64,13 @@ class PessoaSerializer(serializers.HyperlinkedModelSerializer):
                 )
         
         
-class CondominioSerializer(serializers.HyperlinkedModelSerializer):
+class CondominioSerializer(serializers.ModelSerializer):
+    #pessoa = models.ForeignKey(Pessoa, on_delete=models.SET_NULL)
+    #cpf = serializers.SlugRelatedField(read_only=True, slug_field='cpf')
+
     class Meta:
         model = Condominio
-        fields = ('cpf', 
+        fields = ( 'cpf',
                    'cnpj', 
                    'nome_fantasia', 
                    'cep', 
