@@ -13,15 +13,20 @@ const Login = () => {
     alert('logou');
   }
 
-  const teste = spotHoodService.teste()
-
-  console.log(teste);
-
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
 
   useEffect( () => {
     console.log(email, ' ', password);
+
+    const x = async () => {
+      const teste = await spotHoodService.getPeople()
+      console.log(teste);
+    }
+
+    x();
+
+
   }, [email, password])
 
   return (

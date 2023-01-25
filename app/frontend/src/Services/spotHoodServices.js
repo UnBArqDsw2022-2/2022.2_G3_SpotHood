@@ -3,11 +3,13 @@ import { APISpothood } from "./BaseService";
 // const x = 'https://api.github.com';
 
 const spotHoodService = {
-  teste: () => {
-    APISpothood.get("users/yukioz").then((res) => {
-      console.log("teste", res)
-      return res.data
-    })
+  getPeople: async () => {
+
+    console.log("teste")
+
+    const res = await APISpothood.get("/condominium/pessoa/")
+
+    return res.data
   }
 }
 

@@ -2,13 +2,13 @@ import axios from 'axios'
 
 const HOST = process.env.NODE_ENV === 'development' ?
 (
-  'http://localhost:3000'
+  'http://localhost:8001'
 ) : (
-  'endereço do host...'
+  'https://api.github.com'
 )
 
 const APISpothood = axios.create({
-  baseURL: "https://api.github.com",
+  baseURL: "http://localhost:8001"
 })
 
 export {
