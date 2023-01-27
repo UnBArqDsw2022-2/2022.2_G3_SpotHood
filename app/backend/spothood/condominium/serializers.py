@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Pessoa, Condominio, Aviso
+from .models import Pessoa, Condominio, Aviso, Imovel
 
 from .validacao import Validador
 
@@ -98,4 +98,14 @@ class AvisoSerializer(serializers.ModelSerializer):
                 'titulo',
                 'descricao',
                 'data_cadastro'
+                )
+
+class ImovelSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Imovel
+        fields = ( 
+                'idImovel',
+                'cpf',
+                'cnpj',
+                'informacao_complementar',
                 )
