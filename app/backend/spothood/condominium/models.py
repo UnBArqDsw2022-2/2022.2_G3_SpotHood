@@ -58,3 +58,10 @@ class Aviso(models.Model):
     titulo = models.CharField(max_length=75, null=False)
     descricao = models.CharField(max_length=500, null=False)
     data_cadastro = models.DateTimeField(auto_now_add=True,null=False)
+
+class Imovel(models.Model):
+    idImovel = models.AutoField(primary_key=True) 
+    cpf = models.ForeignKey(Pessoa, on_delete=models.RESTRICT, verbose_name=('cpf'))
+    cnpj = models.ForeignKey(Condominio, on_delete=models.RESTRICT, verbose_name=('cnpj'))
+
+    informacao_complementar = models.CharField(max_length=500, null=False)
