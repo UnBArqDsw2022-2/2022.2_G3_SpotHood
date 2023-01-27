@@ -4,14 +4,14 @@ import re
 class Validador:
 
     @staticmethod
-    def nome_valido(nome: str) -> bool:
+    def possui_digito(st: str) -> bool:
 
-        quantia_digitos = len(re.findall(r'\d+',nome))
+        quantia_digitos = len(re.findall(r'\d+',st))
 
         if  quantia_digitos > 0:
-            return False
+            return True
 
-        return True
+        return False
 
     @staticmethod
     def cpf_valido(cpf: str) -> bool:

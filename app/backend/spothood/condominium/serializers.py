@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Pessoa, Condominio
+from .models import Pessoa, Condominio, Aviso
 
 from .validacao import Validador
 
@@ -7,7 +7,7 @@ class PessoaSerializer(serializers.HyperlinkedModelSerializer):
     def validate_nome(self,value):
         value = value.strip()
 
-        if not Validador.nome_valido(value):
+        if Validador.possui_digito(value):
             raise serializers.ValidationError("Nome inválido, não devem existir números em nomes.")
         
         return value
@@ -87,4 +87,15 @@ class CondominioSerializer(serializers.ModelSerializer):
                    'bairro', 
                    'cidade', 
                    'estado' 
+                )
+
+class AvisoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Aviso
+        fields = ( 
+                'cnpj',
+                'idAviso',
+                'titulo',
+                'descricao',
+                'data_cadastro'
                 )
