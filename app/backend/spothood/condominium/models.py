@@ -40,8 +40,8 @@ class Pessoa(models.Model):
     data_nascimento = models.DateField(null=False)
 
 class Condominio(models.Model):
-    cpf = models.ForeignKey(Pessoa, on_delete=models.RESTRICT, verbose_name=('cpf'))
     cnpj = models.CharField(primary_key=True, max_length=18, null=False) 
+    cpf = models.ForeignKey(Pessoa, on_delete=models.RESTRICT, verbose_name=('cpf'))
     nome_fantasia = models.CharField(max_length=150, null=False)
 
     cep = models.CharField(max_length=9,null=False) 
@@ -50,3 +50,11 @@ class Condominio(models.Model):
     bairro = models.CharField(max_length=250, null=False)
     cidade = models.CharField(max_length=150, null=False)
     estado = models.CharField(max_length=2,choices=ESTADOS)
+
+class Aviso(models.Model):
+    idAviso = models.AutoField(primary_key=True) 
+    cnpj = models.ForeignKey(Condominio, on_delete=models.RESTRICT, verbose_name=('cnpj'))
+
+    titulo = models.CharField(max_length=75, null=False)
+    descricao = models.CharField(max_length=500, null=False)
+    data_cadastro = models.DateTimeField(auto_now_add=True,null=False)
