@@ -3,7 +3,7 @@ import { Page, Container, Form, TextLink, ButtonDiv, CreateAccountDiv } from "./
 import { Input } from "../../Components/Input";
 import { CustomButton } from "../../Components/CustomButtom";
 import logo from "../../assets/SpotHood-logo.png";
-import { blue } from "@mui/material/colors";
+import { spotHoodService } from "../../Services/spotHoodServices";
 import { useEffect, useState } from "react";
 
 const Login = () => {
@@ -18,6 +18,15 @@ const Login = () => {
 
   useEffect( () => {
     console.log(email, ' ', password);
+
+    const x = async () => {
+      const teste = await spotHoodService.getPeople()
+      console.log(teste);
+    }
+
+    x();
+
+
   }, [email, password])
 
   return (
@@ -25,8 +34,8 @@ const Login = () => {
       <Container>
         <img src={logo} alt="spothood-logo" width="50%" />
         <Form>
-          <Input label="E-mail" type="text" setText={setEmail} value={email}/>
-          <Input label="Senha" type="password" setText={setPassword} value={password} />
+          <Input label="E-mail" type="text" setText={setEmail} value={email} size = "100%"/>
+          <Input label="Senha" type="password" setText={setPassword} value={password} size = "100%"/>
         </Form>
         <TextLink>Esqueceu a senha?</TextLink>
         <ButtonDiv>
