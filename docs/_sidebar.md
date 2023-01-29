@@ -58,8 +58,19 @@
 
 - **Arquitetura de Software & Reutilização**
   - [4. Desenho de Software (Arquitetura & Reutilização de Software)](/ArquiteturaReutilizacao/4.ArquiteturaReutilizacao.md)
-    - [4.1. Módulo Estilos e Padrões Arquiteturais](/ArquiteturaReutilizacao/4.1.PadroesArquiteturais.md)
-    - [4.2. Módulo Reutilização de Software](/ArquiteturaReutilizacao/4.2.ReutilizacaoDeSoftware.md)
+    - [4.1. Módulo Estilos e Padrões Arquiteturais](/ArquiteturaReutilizacao/4.1.PadroesArquiteturais.md?id=módulo-estilos-e-padrões-arquiteturais)
+      - [Introdução](/ArquiteturaReutilizacao/4.1.PadroesArquiteturais.md?id=_21-introdução)
+      - [Representação Arquitetural](/ArquiteturaReutilizacao/4.1.PadroesArquiteturais.md?id=_22-representação-arquitetural)
+      - [Visão Lógica](/ArquiteturaReutilizacao/4.1.PadroesArquiteturais.md?id=_24-visão-lógica)
+      - [Visão de Processos](/ArquiteturaReutilizacao/4.1.PadroesArquiteturais.md?id=_25-visão-de-processos)
+      - [Visão de Implementação](/ArquiteturaReutilizacao/4.1.PadroesArquiteturais.md?id=_26-visão-de-implementação)
+      - [Visão de Implantação](/ArquiteturaReutilizacao/4.1.PadroesArquiteturais.md?id=_27-visão-de-implementação)
+      - [Visão de Dados](/ArquiteturaReutilizacao/4.1.PadroesArquiteturais.md?id=_28-visão-de-dados)
+    - [4.2. Módulo Reutilização de Software](/ArquiteturaReutilizacao/4.2.ReutilizacaoDeSoftware.md?id=_42-módulo-reutilização-de-software)
+      - [Introdução](/ArquiteturaReutilizacao/4.2.ReutilizacaoDeSoftware.md?id=_1-introdução)
+      - [Reutilização do Front-End](/ArquiteturaReutilizacao/4.2.ReutilizacaoDeSoftware.md?id=_41-reutilização-do-front-end)
+      - [Reutilização do Back-End](/ArquiteturaReutilizacao/4.2.ReutilizacaoDeSoftware.md?id=_51-reutilização-do-back-end)
+      - [Hotspots e Frozenspots](/ArquiteturaReutilizacao/4.2.ReutilizacaoDeSoftware.md?id=_6-hot-spots-e-frozen-spots)
     - [4.3. Iniciativas Extras - Arquitetura & Reutilização de Software](/ArquiteturaReutilizacao/4.3.IniciativasExtras.md)
     - [4.4. Participações - Arquitetura & Reutilização de Software](/ArquiteturaReutilizacao/4.4.ParticipacoesArqReutilizacao.md)
 
