@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { Page, Container, Form, TextLink, ButtonDiv, CreateAccountDiv } from "./style";
 import { Input } from "../../Components/Input";
-import { CustomButton } from "../../Components/CustomButtom";
+import { CustomButton } from "../../Components/CustomButton";
 import logo from "../../assets/SpotHood-logo.png";
 import { spotHoodService } from "../../Services/spotHoodServices";
 import { useEffect, useState } from "react";
