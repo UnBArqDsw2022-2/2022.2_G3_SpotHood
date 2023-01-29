@@ -68,7 +68,7 @@ class Imovel(models.Model):
 
 
 class EspacoHabitacional(models.Model):
-    idEspacoHabitacional = models.AutoField(primary_key=True) 
+    idEspacoHabitacional = models.AutoField(primary_key=True)  
     nome = models.CharField(max_length=75, null=False)
     descricao = models.CharField(max_length=500, null=False)
     reserva = models.ManyToManyField("Pessoa" ,through='reservaEspaçoHabitacional', related_name='pessoas')

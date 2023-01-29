@@ -113,9 +113,9 @@ class ImovelSerializer(serializers.ModelSerializer):
 class EspacoHabitacionalSerializer(serializers.ModelSerializer):
     class Meta:
         model = EspacoHabitacional
-        fields = ('id', 'nome', 'descricao', 'reserva')
+        fields = ('idEspacoHabitacional', 'nome', 'descricao')
 
 class reservaEspaçoHabitacionalSerializer(serializers.ModelSerializer):
     class Meta:
         model = reservaEspaçoHabitacional
-        fields = ('id', 'pessoa', 'espaco_habitacional', 'data')
+        fields = ('idReserva', 'pessoa', 'espaco_habitacional', 'data')
