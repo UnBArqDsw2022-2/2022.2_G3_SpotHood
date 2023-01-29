@@ -17,6 +17,8 @@ const Signup = () => {
   const [phone, setPhone] = useState('');
   const [birthdate, setBirthDate] = useState(Date.now());
 
+  console.log(birthdate)
+
   return (
     <Page>
       <Container>
@@ -40,6 +42,7 @@ const Signup = () => {
           </BigInput>
           <BigInput>
             <Input label = "Senha" 
+              key="password" 
               type = "password" 
               setText = {setPassword} 
               value = {password}
@@ -47,7 +50,8 @@ const Signup = () => {
             />   
           </BigInput>
           <BigInput>
-            <Input label = "Senha" 
+            <Input label = "Senha"
+              key="confirm-password" 
               type = "password" 
               setText = {setConfirmPassword} 
               value = {confirmPassword}
