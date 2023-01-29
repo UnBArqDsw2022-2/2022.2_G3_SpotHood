@@ -6,12 +6,12 @@ interface Props {
   label: string;
   type: string;
   value: any;
-  size: string;
+  size?: string;
 
   setText: Dispatch<SetStateAction<any>>;
 }
 
-const Input: React.FC<Props> = ({ label, type, value, size, setText }) => {
+const Input: React.FC<Props> = ({ label, type, value, size="100%", setText }) => {
 
   return (
     <div
