@@ -4,6 +4,7 @@ import { Login } from "../Pages/Login";
 import { Signup } from "../Pages/Signup";
 import { FirstAccess } from "../Pages/FirstAccess";
 import { JoinCode } from "../Pages/JoinCode";
+import { CreateBuilding } from "../Pages/CreateBuilding";
 
 const Routes = () => {
   return (
@@ -17,6 +18,7 @@ const Routes = () => {
         <Route path="/criar-conta" element={<Signup />} />
         <Route path="/primeiro-acesso" element={<FirstAccess />} />
         <Route path="/codigo-acesso" element={<JoinCode />} />
+        <Route path="/cadastrar-imovel" element={<CreateBuilding />}/>
       {/* </Route> */}
 
       {/* <Route path="/denied" element={<PermissionDenied />} /> */}
