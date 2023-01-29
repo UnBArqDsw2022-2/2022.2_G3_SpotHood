@@ -77,5 +77,5 @@ class EspacoHabitacional(models.Model):
 class reservaEspaçoHabitacional(models.Model):
     pessoa = models.ForeignKey(Pessoa, on_delete=models.RESTRICT)
     espaco_habitacional = models.ForeignKey(EspacoHabitacional, on_delete=models.RESTRICT)
-    data_associacao = models.DateField()
+    data = models.DateField()
     

@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Pessoa, Condominio, Aviso, Imovel
+from .models import Pessoa, Condominio, Aviso, Imovel, EspacoHabitacional, reservaEspaçoHabitacional
 
 from .validacao import Validador
 
@@ -109,3 +109,13 @@ class ImovelSerializer(serializers.ModelSerializer):
                 'cnpj',
                 'informacao_complementar',
                 )
+
+class EspacoHabitacionalSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = EspacoHabitacional
+        fields = ('id', 'nome', 'descricao', 'reserva')
+
+class reservaEspaçoHabitacionalSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = reservaEspaçoHabitacional
+        fields = ('id', 'pessoa', 'espaco_habitacional', 'data')
