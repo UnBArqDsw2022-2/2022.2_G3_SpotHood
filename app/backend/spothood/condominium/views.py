@@ -1,7 +1,8 @@
 from rest_framework import viewsets
 from rest_framework import permissions
-from .models import Pessoa, Condominio, Aviso, Imovel, EspacoHabitacional
-from .serializers import PessoaSerializer, CondominioSerializer, AvisoSerializer, ImovelSerializer, EspacoHabitacionalSerializer
+from .models import Pessoa, Condominio, Aviso, Imovel, EspacoHabitacional, ReservaEspacoHabitacional
+from .serializers import PessoaSerializer, CondominioSerializer, AvisoSerializer,\
+                         ImovelSerializer, EspacoHabitacionalSerializer, ReservaEspacoHabitacionalSerializer
 
 class PessoaViewSet(viewsets.ModelViewSet):
     queryset = Pessoa.objects.all()
@@ -26,4 +27,9 @@ class ImovelViewSet(viewsets.ModelViewSet):
 class EspacoHabitacionalViewSet(viewsets.ModelViewSet):
     queryset = EspacoHabitacional.objects.all()
     serializer_class = EspacoHabitacionalSerializer
+    permission_classes = (permissions.AllowAny,)
+
+class ReservaEspacoHabitacionalViewSet(viewsets.ModelViewSet):
+    queryset = ReservaEspacoHabitacional.objects.all()
+    serializer_class = ReservaEspacoHabitacionalSerializer
     permission_classes = (permissions.AllowAny,)

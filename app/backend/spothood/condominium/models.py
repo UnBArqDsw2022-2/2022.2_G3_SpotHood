@@ -71,10 +71,10 @@ class EspacoHabitacional(models.Model):
     idEspacoHabitacional = models.AutoField(primary_key=True)  
     nome = models.CharField(max_length=75, null=False)
     descricao = models.CharField(max_length=500, null=False)
-    reserva = models.ManyToManyField("Pessoa" ,through='reservaEspaçoHabitacional', related_name='pessoas')
+    reserva = models.ManyToManyField("Pessoa" ,through='ReservaEspacoHabitacional', related_name='pessoas')
 
 
-class reservaEspaçoHabitacional(models.Model):
+class ReservaEspacoHabitacional(models.Model):
     pessoa = models.ForeignKey(Pessoa, on_delete=models.RESTRICT)
     espaco_habitacional = models.ForeignKey(EspacoHabitacional, on_delete=models.RESTRICT)
     data = models.DateField()
