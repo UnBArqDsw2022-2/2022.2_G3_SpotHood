@@ -65,3 +65,17 @@ class Imovel(models.Model):
     cnpj = models.ForeignKey(Condominio, on_delete=models.RESTRICT, verbose_name=('cnpj'))
 
     informacao_complementar = models.CharField(max_length=500, null=False)
+
+
+class EspacoHabitacional(models.Model):
+    idEspacoHabitacional = models.AutoField(primary_key=True) 
+    nome = models.CharField(max_length=75, null=False)
+    descricao = models.CharField(max_length=500, null=False)
+    reserva = models.ManyToManyField("Pessoa" ,through='reservaEspaçoHabitacional', related_name='pessoas')
+
+
+class reservaEspaçoHabitacional(models.Model):
+    pessoa = models.ForeignKey(Pessoa, on_delete=models.RESTRICT)
+    espaco_habitacional = models.ForeignKey(EspacoHabitacional, on_delete=models.RESTRICT)
+    data_associacao = models.DateField()
+    
