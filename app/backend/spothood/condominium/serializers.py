@@ -1,6 +1,6 @@
 from rest_framework import serializers
-from .models import Pessoa, Condominio, Aviso, Imovel
-
+from .models import Pessoa, Condominio, Aviso, Imovel, EspacoHabitacional, ReservaEspacoHabitacional
+from datetime import datetime
 from .validacao import Validador
 
 class PessoaSerializer(serializers.HyperlinkedModelSerializer):
@@ -109,3 +109,19 @@ class ImovelSerializer(serializers.ModelSerializer):
                 'cnpj',
                 'informacao_complementar',
                 )
+
+class EspacoHabitacionalSerializer(serializers.ModelSerializer):
+    reserva = PessoaSerializer(many=True, read_only=True)
+    class Meta:
+        model = EspacoHabitacional
+        fields = ('idEspacoHabitacional', 'nome', 'descricao', 'cnpj', 'reserva')
+
+class ReservaEspacoHabitacionalSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ReservaEspacoHabitacional
+        fields = ('pessoa', 'espaco_habitacional', 'data')
+        
+    def validate_data(self, value):
+            if value < datetime.now().date():
+                raise serializers.ValidationError("A data não pode ser anterior a hoje.")
+            return value
