@@ -3,9 +3,7 @@ import { Page, Container, ContainerInput, ContainerButton, ButtonDiv } from "./s
 import { Input } from "../../Components/Input";
 import { CustomButton } from "../../Components/CustomButton";
 import logo from "../../assets/SpotHood-logo.png";
-import { blue } from "@mui/material/colors";
 import { useEffect, useState } from "react";
-import { Button } from "@mui/material";
 
 const JoinCode = () => {
   const navigate = useNavigate();
@@ -25,7 +23,7 @@ const JoinCode = () => {
         <h1>Insira o código do seu condomínio: </h1>
       </Container>
       <ContainerInput>
-        <Input label="E-mail" type="text" setText={setAccessCode} value={accessCode}/>
+        <Input label="Código do condomínio" type="text" setText={setAccessCode} value={accessCode}/>
       </ContainerInput>
       <ContainerButton>
         <ButtonDiv>
