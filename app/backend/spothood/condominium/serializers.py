@@ -114,7 +114,7 @@ class EspacoHabitacionalSerializer(serializers.ModelSerializer):
     reserva = PessoaSerializer(many=True, read_only=True)
     class Meta:
         model = EspacoHabitacional
-        fields = ('idEspacoHabitacional', 'nome', 'descricao', 'reserva')
+        fields = ('idEspacoHabitacional', 'nome', 'descricao', 'cnpj', 'reserva')
 
 class ReservaEspacoHabitacionalSerializer(serializers.ModelSerializer):
     class Meta:
