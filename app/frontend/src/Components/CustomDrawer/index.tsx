@@ -27,7 +27,6 @@ const CustomDrawer: React.FC<Props> = ({}) => {
         anchor="left"
         open={isDrawerOpen}
         onClose={() => setIsDrawerOpen(false)}
-        classes={{  }}
       >
         <Box p={2} width="250px" textAlign="center" role="presentation">
           <PhotoContainer>
@@ -41,17 +40,5 @@ const CustomDrawer: React.FC<Props> = ({}) => {
     </>
   );
 };
-
-const useStyles = makeStyles({
-  list: {
-    width: 250
-  },
-  fullList: {
-    width: "auto"
-  },
-  paper: {
-    background: "blue"
-  }
-});
 
 export { CustomDrawer };
