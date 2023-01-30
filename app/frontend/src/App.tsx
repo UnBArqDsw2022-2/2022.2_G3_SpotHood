@@ -5,17 +5,17 @@ import { UserProvider } from "./Context/UserContext";
 
 function App() {
   return (
-    <div className="App">
-      <div className="Header">
-        <Navbar />
-      </div>
-      
-      <UserProvider>
+    <UserProvider>
+      <div className="App">
+        <div className="Header">
+          <Navbar />
+        </div>
+
         <div className="Container">
           <Routes />
         </div>
-      </UserProvider>
-    </div>
+      </div>
+    </UserProvider>
   );
 }
 

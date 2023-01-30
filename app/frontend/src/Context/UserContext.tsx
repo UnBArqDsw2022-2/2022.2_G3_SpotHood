@@ -1,9 +1,11 @@
-import React, {useState, createContext, ReactNode} from "react";
+import React, {useState, createContext, ReactNode, useEffect} from "react";
 
+// Props interface
 interface Props {
   children: ReactNode
 }
 
+// Data interface
 interface CondominiumData {
   cpf: string;
   cnpj: string;
@@ -15,13 +17,11 @@ interface CondominiumData {
   cidade: string;
   estado: string;
 }
-
 interface HouseData {
   cpf: string;
   cnpj: string;
   informacao_complementar: string;
 }
-
 interface UserData {
   cpf: string;
   nome: string;
@@ -32,29 +32,41 @@ interface UserData {
   data_nascimento: Date;
 }
 
+// Context Interface
 interface UserContextData {
   user: UserData;
   setUser: React.Dispatch<React.SetStateAction<UserData>>;
 }
-
 interface CondominiumContextData {
   condominium: CondominiumData;
   setCondominium: React.Dispatch<React.SetStateAction<CondominiumData>>;
 }
-
 interface HouseContextData {
   house: HouseData;
   setHouse: React.Dispatch<React.SetStateAction<HouseData>>;
 }
 
-const UserContext = createContext<any>(null);
-const CondominiumContext = createContext<any>(null);
-const HouseContext = createContext<any>(null);
+const UserContext = createContext<any>({
+  user: null,
+  setUser: () => {}
+});
+const CondominiumContext = createContext<any>({});
+const HouseContext = createContext<any>({});
 
 const UserProvider: React.FC<Props> = ( props ) => {
-  const [user, setUser] = useState<any>({});
+  const [user, setUser] = useState<any>(() => {
+    const storedValue = localStorage.getItem("@App:user");
+
+    return storedValue ? JSON.parse(storedValue) : {};
+  });
   const [condominium, setCondominium] = useState<any>({})
   const [house, setHouse] = useState<any>({})
+
+  useEffect(() => {
+    localStorage.setItem("@App:user", JSON.stringify(user))
+  }, [user])
+
+  console.log(user)
 
   return (
     <UserContext.Provider value={{ user, setUser}}>

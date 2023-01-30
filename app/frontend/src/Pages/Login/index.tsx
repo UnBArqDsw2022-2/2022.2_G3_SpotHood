@@ -10,19 +10,20 @@ import { UserContext } from "../../Context/UserContext";
 const Login = () => {
   const navigate = useNavigate();
   const userContext = useContext(UserContext)
-
   const {user, setUser} = userContext
+
+  const [email, setEmail] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
 
   const signIn = async() => {
     const loginResponse = await spotHoodService.login(email, password)
     
     setUser(loginResponse)
+
+    if(user != null){
+      navigate("/")
+    }
   }
-
-  console.log(user, "veja")
-
-  const [email, setEmail] = useState<string>('');
-  const [password, setPassword] = useState<string>('');
 
   // useEffect( () => {
   //   console.log(email, ' ', password);
