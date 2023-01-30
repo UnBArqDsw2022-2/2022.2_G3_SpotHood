@@ -20,7 +20,7 @@ const JoinCode = () => {
         <h1>Insira o código do seu condomínio: </h1>
       </Container>
       <ContainerInput>
-        <Input label="Código do condomínio" type="text" setText={setAccessCode} value={accessCode} size="100%"/>
+        <Input size="100%" label="Código do condomínio" type="text" setText={setAccessCode} value={accessCode}/>
       </ContainerInput>
       <ContainerButton>
         <ButtonDiv>

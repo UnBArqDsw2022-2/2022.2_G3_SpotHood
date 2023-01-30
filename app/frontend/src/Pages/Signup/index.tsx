@@ -15,9 +15,7 @@ const Signup = () => {
   const [cpf, setCPF] = useState('');
   const [sexo, setSexo] = useState('');
   const [phone, setPhone] = useState('');
-  const [birthdate, setBirthDate] = useState(Date.now());
-
-  console.log(birthdate)
+  const [birthdate, setBirthDate] = useState(new Date().toISOString().substring(0, 10));
 
   return (
     <Page>
@@ -50,7 +48,7 @@ const Signup = () => {
             />   
           </BigInput>
           <BigInput>
-            <Input label = "Senha"
+            <Input label = "Confirmar Senha"
               key="confirm-password" 
               type = "password" 
               setText = {setConfirmPassword} 

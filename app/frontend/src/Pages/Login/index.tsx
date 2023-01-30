@@ -4,30 +4,39 @@ import { Input } from "../../Components/Input";
 import { CustomButton } from "../../Components/CustomButton";
 import logo from "../../assets/SpotHood-logo.png";
 import { spotHoodService } from "../../Services/spotHoodServices";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { UserContext } from "../../Context/UserContext";
 
 const Login = () => {
   const navigate = useNavigate();
-
-  const signIn = () => {
-    alert('logou');
-  }
+  const userContext = useContext(UserContext)
+  const {user, setUser} = userContext
 
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
 
-  useEffect( () => {
-    console.log(email, ' ', password);
+  const signIn = async() => {
+    const loginResponse = await spotHoodService.login(email, password)
+    
+    setUser(loginResponse)
 
-    const x = async () => {
-      const teste = await spotHoodService.getPeople()
-      console.log(teste);
+    if(user != null){
+      navigate("/")
     }
+  }
 
-    x();
+  // useEffect( () => {
+  //   console.log(email, ' ', password);
+
+  //   const x = async () => {
+  //     const teste = await spotHoodService.getPeople()
+  //     console.log(teste);
+  //   }
+
+  //   x();
 
 
-  }, [email, password])
+  // }, [email, password])
 
   return (
     <Page>
