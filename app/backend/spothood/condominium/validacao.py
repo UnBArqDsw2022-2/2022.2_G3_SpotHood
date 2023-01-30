@@ -15,12 +15,6 @@ class Validador:
 
     @staticmethod
     def cpf_valido(cpf: str) -> bool:
-
-        cpf_valido = re.findall(r'^\d{3}\.\d{3}\.\d{3}-\d{2}$',cpf)
-
-        if not cpf_valido:
-            return False
-
         return True
 
     @staticmethod
