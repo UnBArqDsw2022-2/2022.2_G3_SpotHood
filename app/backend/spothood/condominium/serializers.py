@@ -55,8 +55,8 @@ class PessoaSerializer(serializers.HyperlinkedModelSerializer):
                   'sexo',
                   'data_nascimento'
                 )
-        
-        
+
+
 class CondominioSerializer(serializers.ModelSerializer):
     def validate_cnpj(self,value):
         value = value.strip()
