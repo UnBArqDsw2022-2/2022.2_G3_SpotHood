@@ -1,12 +1,15 @@
 import React, { useState } from "react";
-import { Box, Drawer, IconButton, makeStyles, Typography } from "@mui/material";
+import { Box, Drawer, IconButton, Link, makeStyles } from "@mui/material";
 import Icon from "../Icons";
 import { OptionContainer, PhotoContainer } from "./style";
+import { useNavigate } from "react-router-dom";
 
 interface Props {}
 
 const CustomDrawer: React.FC<Props> = ({}) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -21,19 +24,67 @@ const CustomDrawer: React.FC<Props> = ({}) => {
         <Icon
           name="menu"
           action={() => null}
+          style={{
+            fontSize: "25px",
+          }}
         />
       </IconButton>
       <Drawer
         anchor="left"
         open={isDrawerOpen}
         onClose={() => setIsDrawerOpen(false)}
+<<<<<<< HEAD
+=======
+        style={{
+          backgroundColor: "8B8B8B"
+        }}
+>>>>>>> 4de6e383e7e14581de01c5d450a1ab6c2cf20ff6
       >
-        <Box p={2} width="250px" textAlign="center" role="presentation">
+        <Box width="250px" textAlign="center" role="presentation">
           <PhotoContainer>
-
+            <Icon
+              name="account-circle"
+              action={() => null}
+              style={{ fontSize: "15rem" }}
+            />
+            <h2>Nome da pessoa</h2>
+            <Link
+              onClick={() => {navigate("/")}}
+            >
+              Acessar perfil
+            </Link>
           </PhotoContainer>
-          <OptionContainer>
-            teste
+          <OptionContainer
+            style={{
+              fontWeight: "bold"
+            }}
+            onClick={() => {navigate("/")}}
+          >
+            Aviso
+          </OptionContainer>
+          <OptionContainer
+            style={{
+              fontWeight: "bold"
+            }}
+            onClick={() => {navigate("/")}}
+          >
+            Reserva
+          </OptionContainer>
+          <OptionContainer
+            style={{
+              fontWeight: "bold"
+            }}
+            onClick={() => {navigate("/")}}
+          >
+            Meu Imóvel
+          </OptionContainer>
+          <OptionContainer
+            style={{
+              fontWeight: "bold"
+            }}
+            onClick={() => {navigate("/")}}
+          >
+            Sair
           </OptionContainer>
         </Box>
       </Drawer>

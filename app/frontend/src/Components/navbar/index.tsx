@@ -1,24 +1,26 @@
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
 import { Typography } from '@mui/material';
-import Icon from '../Icons';
 import { CustomDrawer } from '../CustomDrawer';
-import { useNavigate } from 'react-router-dom';
+import { useContext, useEffect } from 'react';
+import { UserContext } from '../../Context/UserContext';
+import { useLocation } from 'react-router-dom';
 
 export default function Navbar() {
 
-  console.log(window.location.pathname, "veja")
-  const navigate = useNavigate()
+  const { user } = useContext(UserContext)
+  const location = useLocation();
 
-  return (
+  console.log(location)
+
+  return user && (location.pathname !== "/") && (location.pathname !== "/criar-conta") && (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          <CustomDrawer>
-
-          </CustomDrawer>
+          {/* Drawer */}
+          <CustomDrawer/>
+          {/* Drawer */}
           <Typography
             variant="h6"
             component="div"
