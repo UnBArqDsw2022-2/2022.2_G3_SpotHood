@@ -19,6 +19,15 @@ const spotHoodService = {
     })
 
     return res.data
+  },
+
+  getNews: async () => {
+
+    console.log("teste")
+
+    const res = await APISpothood.get("/condominium/aviso/")
+
+    return res.data
   }
 }
 
