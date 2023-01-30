@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Page, Container, ContainerInput, ContainerButton, ButtonDiv } from "./style";
 import { Input } from "../../Components/Input";
 import { CustomButton } from "../../Components/CustomButton";
@@ -7,13 +7,10 @@ import { useEffect, useState } from "react";
 
 const JoinCode = () => {
   const navigate = useNavigate();
-
   const signIn = () => {
     alert('Entrou no condomínio!');
   }
-
   const [accessCode, setAccessCode] = useState<string>('');
-
   useEffect( () => {
   }, []);
 
