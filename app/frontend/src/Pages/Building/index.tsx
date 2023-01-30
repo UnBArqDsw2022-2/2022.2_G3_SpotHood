@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Page, Container, Title, Form, ButtonDiv, SmallInput } from './style';
 import { BigIconButton } from "../../Components/BigIconButton";
@@ -19,7 +18,7 @@ const Building = () => {
     <Page>
       <Container>
         <Title>Imóveis do Condomínio</Title>
-          <div>
+        <ButtonDiv>
           <BigIconButton
                 src={addIcon}
                 alt="primary"
@@ -28,22 +27,22 @@ const Building = () => {
                 hoverColor={addBtnHoverColor}
                 onClick={() => cadastroIn()}
                 style={{
-                    width:"30%"
+                    width:"25%"
                   }}
           />
           <BigIconButton
                 src={closeIcon}
                 alt="primary"
-                label={["Adicionar","imovel"]}
+                label={["Imovel","Paulo Souza"]}
                 color="#a0a0a0"
                 hoverColor={closeBtnHoverColor}
                 onClick={() => cadastroIn()}
                 style={{
-                    width:"30%"
+                    width:"25%"
                 }}
           />
-          </div>        
-        <div><img src={logo} alt="spothood-logo" width="70%" /></div>
+        </ButtonDiv>       
+        <div><img src={logo} alt="spothood-logo" width="60%" /></div>
       </Container>
     </Page>
   );

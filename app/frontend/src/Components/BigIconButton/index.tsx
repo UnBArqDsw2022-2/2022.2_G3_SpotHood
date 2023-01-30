@@ -30,7 +30,7 @@ const BigIconButton: React.FC<Props> = ({ src, alt, label, color, hoverColor, on
     margin-right: 1rem;
     margin-left: 1rem;
     margin-top: 1rem;
-    width: 7vh;
+    width: 8vh;
     pointer-events: none;
   `;
 

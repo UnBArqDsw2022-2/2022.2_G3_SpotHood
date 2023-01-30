@@ -31,6 +31,7 @@ const Form = styled.div`
 
 const Title = styled.h1`
   margin: 0;
+  justify-content: center;
 `;
 
 const SmallInput = styled.div`
@@ -45,7 +46,7 @@ const ButtonDiv = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 `;
 
 export { Page, Container, Form, Title, SmallInput, ButtonDiv };

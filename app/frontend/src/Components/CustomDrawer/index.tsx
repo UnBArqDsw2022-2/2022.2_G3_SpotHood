@@ -33,12 +33,9 @@ const CustomDrawer: React.FC<Props> = ({}) => {
         anchor="left"
         open={isDrawerOpen}
         onClose={() => setIsDrawerOpen(false)}
-<<<<<<< HEAD
-=======
         style={{
           backgroundColor: "8B8B8B"
         }}
->>>>>>> 4de6e383e7e14581de01c5d450a1ab6c2cf20ff6
       >
         <Box width="250px" textAlign="center" role="presentation">
           <PhotoContainer>
