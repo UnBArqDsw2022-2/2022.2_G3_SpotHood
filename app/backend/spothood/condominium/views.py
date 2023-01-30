@@ -43,6 +43,13 @@ class ImovelViewSet(viewsets.ModelViewSet):
     serializer_class = ImovelSerializer
     permission_classes = (permissions.AllowAny,)
 
+    def get_queryset(self):
+        queryset = Imovel.objects.all()
+        cpf = self.request.query_params.get('cpf', None)
+        if cpf:
+            queryset = queryset.filter(cpf__cpf__iexact=cpf)
+        return queryset
+
 class EspacoHabitacionalViewSet(viewsets.ModelViewSet):
     queryset = EspacoHabitacional.objects.all()
     serializer_class = EspacoHabitacionalSerializer
