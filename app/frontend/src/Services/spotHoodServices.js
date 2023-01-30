@@ -22,12 +22,24 @@ const spotHoodService = {
   },
 
   getNews: async () => {
-
-    console.log("teste")
-
     const res = await APISpothood.get("/condominium/aviso/")
 
     return res.data
+  },
+
+  getCond: async () => {
+    const res = await APISpothood.get("/condominium/condominio/")
+
+    return res.data
+  },
+
+  createNews: async (cnpj, titulo, descricao) => {
+    await APISpothood.post("/condominium/aviso/", {
+      cnpj,
+      titulo,
+      descricao,
+    })
+
   }
 }
 
