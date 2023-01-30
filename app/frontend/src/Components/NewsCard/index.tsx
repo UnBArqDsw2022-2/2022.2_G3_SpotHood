@@ -12,6 +12,8 @@ interface Props {
 
 const NewsCard: React.FC<Props> = ({title, date, description, isAdmin }) => {
 
+  const formatedDate = new Date(date).toLocaleDateString();
+
   const CardDiv = styled.div`
     margin-bottom: 1.3rem;
     `;
@@ -23,17 +25,17 @@ const NewsCard: React.FC<Props> = ({title, date, description, isAdmin }) => {
 
   return (
     <CardDiv>
-    <Card sx={{ minWidth: 275 }} style={{ backgroundColor: "#919BDE" }}>
+    <Card sx={{ minWidth: 275 }} style={{ backgroundColor: "#c9e0b1" }}>
       <CardContent>
         <TitleDiv>
           <h1>{ title }</h1>
-          <h3>{ date }</h3>
+          <h3>{ formatedDate }</h3>
         </TitleDiv>
         <p>{ description }</p>
       </CardContent>
       <CardActions>
-        { isAdmin ? <Button size="small">Editar</Button> : null}
-        { isAdmin ? <Button size="small">Excluir</Button> : null}
+        { isAdmin ? <Button variant="outlined" size="small" style={{ borderColor: "#040a03", color: "#040a03" }}>Editar</Button> : null}
+        { isAdmin ? <Button variant="outlined" size="small" style={{ borderColor: "#040a03", color: "#040a03" }}>Excluir</Button> : null}
       </CardActions>
     </Card>
     </CardDiv>

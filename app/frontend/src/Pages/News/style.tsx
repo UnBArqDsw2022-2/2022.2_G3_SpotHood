@@ -20,9 +20,11 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   width: auto;
+  height: 3rem;
   text-align: left;
   margin: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+  align-itens: center;
 `;
 
 const ContainerInput = styled.div`
