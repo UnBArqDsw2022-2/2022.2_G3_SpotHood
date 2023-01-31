@@ -13,6 +13,9 @@ const Building = () => {
   const cadastroIn = () => {
     navigate("/cadastrar-imovel");
   }
+  const deleteIn = () => {
+    navigate("/deletar-imovel");
+  }
 
   return (
     <Page>
@@ -36,7 +39,7 @@ const Building = () => {
                 label={["Imovel","Paulo Souza"]}
                 color="#a0a0a0"
                 hoverColor={closeBtnHoverColor}
-                onClick={() => cadastroIn()}
+                onClick={() => deleteIn()}
                 style={{
                     width:"25%"
                 }}

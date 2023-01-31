@@ -6,6 +6,7 @@ import { FirstAccess } from "../Pages/FirstAccess";
 import { JoinCode } from "../Pages/JoinCode";
 import { CreateBuilding } from "../Pages/CreateBuilding";
 import { Building } from "../Pages/Building";
+import { DeleteBuilding } from "../Pages/DeleteBuilding";
 import { News } from "../Pages/News";
 
 const Routes = () => {
@@ -22,6 +23,7 @@ const Routes = () => {
         <Route path="/codigo-acesso" element={<JoinCode />} />
         <Route path="/cadastrar-imovel" element={<CreateBuilding />}/>
         <Route path="/imoveis" element={<Building/>}/>
+        <Route path="/deletar-imovel" element={<DeleteBuilding/>}/>
         <Route path="/avisos" element={<News />}/>
       {/* </Route> */}
 
