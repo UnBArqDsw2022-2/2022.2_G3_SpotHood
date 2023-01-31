@@ -11,7 +11,7 @@ const spotHoodService = {
   },
 
   login: async (email, senha) => {
-    
+
     const res = await APISpothood.post("/condominium/login/",
     {
       email,
@@ -40,6 +40,14 @@ const spotHoodService = {
       descricao,
     })
 
+  },
+
+  createHousing: async ({cnpj, description, name}) => {
+    await APISpothood.post("/condominium/espaco-habitacional/", {
+      cnpj,
+      description,
+      name,
+    })
   }
 }
 
