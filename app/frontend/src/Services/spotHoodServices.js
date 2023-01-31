@@ -35,6 +35,19 @@ const spotHoodService = {
       sexo,
       data_nascimento
     })
+  getCond: async () => {
+    const res = await APISpothood.get("/condominium/condominio/")
+
+    return res.data
+  },
+
+  createNews: async (cnpj, titulo, descricao) => {
+    await APISpothood.post("/condominium/aviso/", {
+      cnpj,
+      titulo,
+      descricao,
+    })
+
   }
 }
 
