@@ -33,6 +33,9 @@ const FirstAccess = () => {
           color="#41AD4C"
           hoverColor={addBtnHoverColor}
           onClick={() => alert("Cliquei")}
+          style={{
+            width:"10%"
+          }}
         />
         <BigIconButton 
           src={joinIcon}
@@ -41,6 +44,9 @@ const FirstAccess = () => {
           color="#747AFE"
           hoverColor={joinBtnHoverColor}
           onClick={() => alert("Cliquei")}
+          style={{
+            width:"10%"
+          }}
         />
       </ButtonDiv>
       </div>

@@ -9,7 +9,10 @@ const CreateBuilding = () => {
 
   const [cpfProprietario, setCpfProprietario] = useState('');
   const [informacao, setInformacao] = useState('');
-
+  const cadastrou = () => {
+    alert('Cadastrou');
+    navigate('/imoveis')
+  }
   return (
     <Page>
       <Container>
@@ -36,15 +39,12 @@ const CreateBuilding = () => {
           <CustomButton
             label="Voltar"
             color="inherit"
-            onClick={() => navigate('/')}
+            onClick={() => navigate('/imoveis')}
           />
           <CustomButton
             label="Cadastrar"
             color="primary"
-            onClick={() => {
-              alert('Cadastrou');
-              navigate('/cadastrar-imovel')
-            }}
+            onClick={() => cadastrou()}
           />
         </ButtonDiv>
       </Container>

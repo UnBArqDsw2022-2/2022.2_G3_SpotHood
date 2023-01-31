@@ -5,6 +5,8 @@ import { Signup } from "../Pages/Signup";
 import { FirstAccess } from "../Pages/FirstAccess";
 import { JoinCode } from "../Pages/JoinCode";
 import { CreateBuilding } from "../Pages/CreateBuilding";
+import { Building } from "../Pages/Building";
+import { DeleteBuilding } from "../Pages/DeleteBuilding";
 import { News } from "../Pages/News";
 import { CreateHousingArea } from "../Pages/CommonArea/Create";
 import { HousingArea } from "../Pages/CommonArea/List";
@@ -22,6 +24,8 @@ const Routes = () => {
         <Route path="/primeiro-acesso" element={<FirstAccess />} />
         <Route path="/codigo-acesso" element={<JoinCode />} />
         <Route path="/cadastrar-imovel" element={<CreateBuilding />}/>
+        <Route path="/imoveis" element={<Building/>}/>
+        <Route path="/deletar-imovel" element={<DeleteBuilding/>}/>
         <Route path="/avisos" element={<News />}/>
         <Route path="/espaco-habitacional" element={<HousingArea/>}/>
         <Route path="/criar-espaco" element={<CreateHousingArea/>}/>
