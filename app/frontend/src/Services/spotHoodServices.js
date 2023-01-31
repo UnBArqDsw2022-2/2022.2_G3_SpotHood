@@ -4,14 +4,11 @@ import { APISpothood } from "./BaseService";
 
 const spotHoodService = {
   getPeople: async () => {
-
     const res = await APISpothood.get("/condominium/pessoa/")
-
     return res.data
   },
 
   login: async (email, senha) => {
-    
     const res = await APISpothood.post("/condominium/login/",
     {
       email,
@@ -22,12 +19,22 @@ const spotHoodService = {
   },
 
   getNews: async () => {
-
-    console.log("teste")
-
     const res = await APISpothood.get("/condominium/aviso/")
-
     return res.data
+  },
+
+  createAccount: async (cpf, nome, email, telefone, senha, sexo, data_nascimento) => {
+
+    await APISpothood.post("/condominium/pessoa/",
+    {
+      cpf,
+      nome,
+      email,
+      telefone,
+      senha,
+      sexo,
+      data_nascimento
+    })
   }
 }
 

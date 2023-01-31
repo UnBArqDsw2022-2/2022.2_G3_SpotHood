@@ -21,22 +21,14 @@ const Login = () => {
     setUser(loginResponse)
 
     if(user != null){
-      navigate("/")
+      navigate("/primeiro-acesso")
     }
   }
 
-  // useEffect( () => {
-  //   console.log(email, ' ', password);
+  useEffect( () => {
+    localStorage.removeItem("@App:user")
 
-  //   const x = async () => {
-  //     const teste = await spotHoodService.getPeople()
-  //     console.log(teste);
-  //   }
-
-  //   x();
-
-
-  // }, [email, password])
+  }, [])
 
   return (
     <Page>

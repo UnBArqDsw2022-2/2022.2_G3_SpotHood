@@ -46,7 +46,7 @@ const CustomDrawer: React.FC<Props> = ({}) => {
             />
             <h2>Nome da pessoa</h2>
             <Link
-              onClick={() => {navigate("/")}}
+              onClick={() => {navigate("/perfil")}}
             >
               Acessar perfil
             </Link>
@@ -55,15 +55,15 @@ const CustomDrawer: React.FC<Props> = ({}) => {
             style={{
               fontWeight: "bold"
             }}
-            onClick={() => {navigate("/")}}
+            onClick={() => {navigate("/avisos")}}
           >
-            Aviso
+            Avisos
           </OptionContainer>
           <OptionContainer
             style={{
               fontWeight: "bold"
             }}
-            onClick={() => {navigate("/")}}
+            onClick={() => {navigate("/reserva")}}
           >
             Reserva
           </OptionContainer>
@@ -71,7 +71,7 @@ const CustomDrawer: React.FC<Props> = ({}) => {
             style={{
               fontWeight: "bold"
             }}
-            onClick={() => {navigate("/")}}
+            onClick={() => {navigate("/imovel")}}
           >
             Meu Imóvel
           </OptionContainer>

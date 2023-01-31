@@ -53,6 +53,8 @@ const UserContext = createContext<any>({
 const CondominiumContext = createContext<any>({});
 const HouseContext = createContext<any>({});
 
+
+// Provider
 const UserProvider: React.FC<Props> = ( props ) => {
   const [user, setUser] = useState<any>(() => {
     const storedValue = localStorage.getItem("@App:user");
@@ -66,7 +68,7 @@ const UserProvider: React.FC<Props> = ( props ) => {
     localStorage.setItem("@App:user", JSON.stringify(user))
   }, [user])
 
-  console.log(user)
+  // console.log(user)
 
   return (
     <UserContext.Provider value={{ user, setUser}}>

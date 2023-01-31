@@ -4,16 +4,17 @@ import { BigIconButton } from "../../Components/BigIconButton";
 import logo from "../../assets/SpotHood-logo.png";
 import addIcon from "../../assets/addCond.png";
 import joinIcon from "../../assets/joinCond.png";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { UserContext } from "../../Context/UserContext";
 
 const FirstAccess = () => {
   const navigate = useNavigate();
-
-  const userName = "Usuário Moreira";
+  const { user } = useContext(UserContext)
 
   const addBtnHoverColor = [100, 196, 111];
   const joinBtnHoverColor = [134, 139, 247];
   
+  console.log(user)
 
   useEffect( () => {
   }, []);
@@ -21,7 +22,7 @@ const FirstAccess = () => {
   return (
     <Page>
       <div>
-        <h1>Bem-vindo {userName}!</h1>
+        <h1>Bem-vindo {user[0]?.nome}!</h1>
         <h2>Para continuar, crie um condomínio ou participe de um existente.</h2>
       </div>
       <div>
@@ -40,7 +41,7 @@ const FirstAccess = () => {
           label="Entrar em um condominio"
           color="#747AFE"
           hoverColor={joinBtnHoverColor}
-          onClick={() => alert("Cliquei")}
+          onClick={() => alert("Desabilitado")}
         />
       </ButtonDiv>
       </div>
