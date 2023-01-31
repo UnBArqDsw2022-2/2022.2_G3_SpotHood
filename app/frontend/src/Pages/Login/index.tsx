@@ -21,22 +21,9 @@ const Login = () => {
     setUser(loginResponse)
 
     if(user != null){
-      navigate("/")
+      navigate("/primeiro-acesso")
     }
   }
-
-  // useEffect( () => {
-  //   console.log(email, ' ', password);
-
-  //   const x = async () => {
-  //     const teste = await spotHoodService.getPeople()
-  //     console.log(teste);
-  //   }
-
-  //   x();
-
-
-  // }, [email, password])
 
   return (
     <Page>
