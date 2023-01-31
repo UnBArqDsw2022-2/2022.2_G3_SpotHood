@@ -42,6 +42,11 @@ const spotHoodService = {
 
   },
 
+  getHousing: async() => {
+    const res = await APISpothood.get("/condominium/espaco-habitacional/")
+    return res.data
+  },
+
   createHousing: async ({cnpj, description, name}) => {
     await APISpothood.post("/condominium/espaco-habitacional/", {
       cnpj,
