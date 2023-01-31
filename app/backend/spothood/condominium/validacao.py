@@ -15,12 +15,6 @@ class Validador:
 
     @staticmethod
     def cpf_valido(cpf: str) -> bool:
-
-        cpf_valido = re.findall(r'^\d{3}\.\d{3}\.\d{3}-\d{2}$',cpf)
-
-        if not cpf_valido:
-            return False
-
         return True
 
     @staticmethod
@@ -52,12 +46,8 @@ class Validador:
 
     @staticmethod
     def cnpj_valido(cnpj: str) -> bool:
-        cnpj_valido = re.findall(r'^\d{2}\.\d{3}\.\d{3}\/000[12]-\d{2}$',cnpj)
-
-        if not cnpj_valido:
-            return False
-
         return True
+
     @staticmethod
     def cep_valido(cep: str) -> bool:
         cep_valido = re.findall(r'^\d{5}-\d{3}$',cep)

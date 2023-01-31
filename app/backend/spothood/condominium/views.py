@@ -1,5 +1,6 @@
 from rest_framework import viewsets, permissions
 from rest_framework.response import Response
+import django_filters
 from .models import Pessoa, Condominio, Aviso, Imovel, EspacoHabitacional, ReservaEspacoHabitacional
 from .serializers import PessoaSerializer, CondominioSerializer, AvisoSerializer,\
                          ImovelSerializer, EspacoHabitacionalSerializer, ReservaEspacoHabitacionalSerializer
@@ -8,7 +9,7 @@ class PessoaViewSet(viewsets.ModelViewSet):
     queryset = Pessoa.objects.all()
     serializer_class = PessoaSerializer
     permission_classes = (permissions.AllowAny,)
-    
+
 class LoginViewSet(viewsets.ViewSet):
     serializer_class = PessoaSerializer
 
@@ -30,10 +31,24 @@ class AvisoViewSet(viewsets.ModelViewSet):
     serializer_class = AvisoSerializer
     permission_classes = (permissions.AllowAny,)
 
+    def get_queryset(self):
+        queryset = Aviso.objects.all()
+        cnpj = self.request.query_params.get('cnpj', None)
+        if cnpj:
+            queryset = queryset.filter(cnpj__cnpj__iexact=cnpj)
+        return queryset
+
 class ImovelViewSet(viewsets.ModelViewSet):
     queryset = Imovel.objects.all()
     serializer_class = ImovelSerializer
     permission_classes = (permissions.AllowAny,)
+
+    def get_queryset(self):
+        queryset = Imovel.objects.all()
+        cpf = self.request.query_params.get('cpf', None)
+        if cpf:
+            queryset = queryset.filter(cpf__cpf__iexact=cpf)
+        return queryset
 
 class EspacoHabitacionalViewSet(viewsets.ModelViewSet):
     queryset = EspacoHabitacional.objects.all()
