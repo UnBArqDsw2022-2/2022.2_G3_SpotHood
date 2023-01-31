@@ -3,22 +3,21 @@ import React from "react";
 interface Props {
   src: string;
   alt: string;
-  label: string;
+  label: string|Array<string>;
   color: string;
   hoverColor: number[];
   onClick: () => void;
+  style: React.CSSProperties;
 }
 
-const BigIconButton: React.FC<Props> = ({ src, alt, label, color, hoverColor, onClick }) => {
+const BigIconButton: React.FC<Props> = ({ src, alt, label, color, hoverColor, onClick, style }) => {
 
   const BigButton = styled.button`
     background-color: ${color};
     border: none;
-    padding: 1rem;
-    padding-right: 3rem;
-    padding-left: 3rem;
     margin: 3rem;
     border-radius: 0.5rem;
+    width: ${style.width};
     cursor: pointer;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     transition-duration: 0.4s;
@@ -31,7 +30,7 @@ const BigIconButton: React.FC<Props> = ({ src, alt, label, color, hoverColor, on
     margin-right: 1rem;
     margin-left: 1rem;
     margin-top: 1rem;
-    width: 40vh;
+    width: 8vh;
     pointer-events: none;
   `;
 
@@ -44,7 +43,10 @@ const BigIconButton: React.FC<Props> = ({ src, alt, label, color, hoverColor, on
   return (
     <BigButton onClick={onClick}>
       <IMGBtn src={src} alt={alt} />
-      <PButton>{label}</PButton>
+      <PButton>{
+        (typeof label) == "string"?
+        label: label.toString().replace(",","\n")
+      }</PButton>
     </BigButton>
   );
 };
