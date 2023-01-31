@@ -25,7 +25,7 @@ const Routes = () => {
         <Route path="/primeiro-acesso" element={<FirstAccess />} />
         <Route path="/codigo-acesso" element={<JoinCode />} />
         <Route path="/cadastrar-imovel" element={<CreateBuilding />}/>
-        <Route path="/imoveis" element={<Building/>}/>
+        <Route path="/em-construcao" element={<Building/>}/>
         <Route path="/deletar-imovel" element={<DeleteBuilding/>}/>
         <Route path="/avisos" element={<News />}/>
         <Route path="/imoveis" element={<Imovel />}/>
