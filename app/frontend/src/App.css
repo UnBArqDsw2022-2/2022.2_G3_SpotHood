@@ -3,6 +3,8 @@
   display: flex;
   flex-direction: column;
   background: url('./assets/neighborhood.jpg');
+  background-position: top center;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
 }
@@ -10,11 +12,11 @@
 .Container {
   display: flex;
   width: 100vw;
-  height: 93vh;
+  height: 100vh;
 }
 
-.Header {
+/* .Header {
   display: flex;
   width: 100vw;
   height: 7vh;
-}
+} */

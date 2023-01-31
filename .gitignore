@@ -1,5 +1,8 @@
 # Arquivos Gerais
 /app/*/.gitignore
+Makefile
+Makefile.in
+
 
 # Backend
 __pycache__
@@ -8,6 +11,7 @@ __pycache__
 # Frontend
 node_modules
 build
+package-lock.json
 
 # Macos
 .DS_Store

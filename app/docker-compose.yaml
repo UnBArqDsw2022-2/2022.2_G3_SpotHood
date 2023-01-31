@@ -30,7 +30,7 @@ services:
         networks:
           - spothood-network
         volumes:
-            - .:/spothood-network
+            - ./backend/spothood:/spothood/spothood
             - pip_cache:/usr/local/lib/python3.10/site-packages
         depends_on:
             spothood-db:
@@ -46,7 +46,7 @@ services:
             context: ./frontend
             dockerfile: Dockerfile
         volumes:
-            - './:/usr/src/app'
+            - './frontend:/app'
             - '/usr/src/app/node_modules'
         ports:
             - 8080:8080
