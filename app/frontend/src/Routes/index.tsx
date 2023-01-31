@@ -8,6 +8,8 @@ import { CreateBuilding } from "../Pages/CreateBuilding";
 import { Building } from "../Pages/Building";
 import { DeleteBuilding } from "../Pages/DeleteBuilding";
 import { News } from "../Pages/News";
+import { CreateHousingArea } from "../Pages/CommonArea/Create";
+import { HousingArea } from "../Pages/CommonArea/List";
 
 const Routes = () => {
   return (
@@ -25,6 +27,8 @@ const Routes = () => {
         <Route path="/imoveis" element={<Building/>}/>
         <Route path="/deletar-imovel" element={<DeleteBuilding/>}/>
         <Route path="/avisos" element={<News />}/>
+        <Route path="/espaco-habitacional" element={<HousingArea/>}/>
+        <Route path="/criar-espaco" element={<CreateHousingArea/>}/>
       {/* </Route> */}
 
       {/* <Route path="/denied" element={<PermissionDenied />} /> */}

@@ -7,10 +7,10 @@ interface Props {
   color: string;
   hoverColor: number[];
   onClick: () => void;
-  style: React.CSSProperties;
+  style?: React.CSSProperties;
 }
 
-const BigIconButton: React.FC<Props> = ({ src, alt, label, color, hoverColor, onClick, style }) => {
+const BigIconButton: React.FC<Props> = ({ src, alt, label, color, hoverColor, onClick, style={width: "10%"} }) => {
 
   const BigButton = styled.button`
     background-color: ${color};
