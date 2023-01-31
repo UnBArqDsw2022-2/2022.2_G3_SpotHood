@@ -31,6 +31,7 @@ echo "======= POSTGRES IS UP, CONNECTING"
 
 echo '======= MAKING MIGRATIONS'
 python3 spothood/manage.py makemigrations
+python3 spothood/manage.py makemigrations condominium
 
 echo '======= RUNNING MIGRATIONS'
 python3 spothood/manage.py migrate

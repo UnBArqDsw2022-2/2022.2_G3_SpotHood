@@ -5,17 +5,18 @@ import { Dispatch, SetStateAction } from "react";
 interface Props {
   label: string;
   type: string;
-  value: string;
+  value: any;
+  size?: string;
 
   setText: Dispatch<SetStateAction<any>>;
 }
 
-const Input: React.FC<Props> = ({ label, type, value, setText }) => {
+const Input: React.FC<Props> = ({ label, type, value, size="100%", setText }) => {
 
   return (
     <div
       style={{
-        width: "100%",
+        width: `${size}`,
       }}
     >
       <TextField
