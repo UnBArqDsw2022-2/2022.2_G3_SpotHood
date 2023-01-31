@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 import { Page, Container, CardsContainer, ContainerInput, ContainerButton, ButtonDiv } from "./style";
 import { Input } from "../../Components/Input";
 import { NewsCard } from "../../Components/NewsCard";
-import logo from "../../assets/SpotHood-logo.png";
 import { useContext, useEffect, useState } from "react";
 import Add from '@mui/icons-material/Add';
 import { Button, Modal, Box } from "@mui/material";
