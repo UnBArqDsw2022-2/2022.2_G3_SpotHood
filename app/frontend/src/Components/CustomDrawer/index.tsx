@@ -71,7 +71,7 @@ const CustomDrawer: React.FC<Props> = ({}) => {
             style={{
               fontWeight: "bold"
             }}
-            onClick={() => {navigate("/imovel")}}
+            onClick={() => {navigate("/imoveis")}}
           >
             Meu Imóvel
           </OptionContainer>
@@ -79,7 +79,10 @@ const CustomDrawer: React.FC<Props> = ({}) => {
             style={{
               fontWeight: "bold"
             }}
-            onClick={() => {navigate("/")}}
+            onClick={() => {
+              localStorage.clear();
+              navigate("/");
+            }}
           >
             Sair
           </OptionContainer>

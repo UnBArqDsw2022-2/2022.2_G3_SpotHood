@@ -25,11 +25,6 @@ const Login = () => {
     }
   }
 
-  useEffect( () => {
-    localStorage.removeItem("@App:user")
-
-  }, [])
-
   return (
     <Page>
       <Container>

@@ -33,7 +33,8 @@ const News = () => {
   const handleClose = () => setOpen(false);
 
   const handleCreateNews = () => {
-    spotHoodService.createNews("b", title, description); //arrumar confInfo para coletar o CPF
+
+    spotHoodService.createNews(condInfo[0]?.cnpj, title, description); //arrumar confInfo para coletar o CPF
     handleClose()
     window.location.reload()
     setTitle("")
@@ -53,7 +54,7 @@ const News = () => {
   };
 
   const [news, setNews] = useState([]);
-  const [condInfo, setCondInfo] = useState([]);
+  const [condInfo, setCondInfo]:any = useState({});
   //const cnpj = "22.222.222/0002-22";
 
   useEffect( () => {
@@ -65,14 +66,16 @@ const News = () => {
     
     const getCondInfo = async () => {
       let cResult = await spotHoodService.getCond();
-      setCondInfo(cResult[0]);
+      setCondInfo(cResult);
     }
   
     getCondInfo();
     getNews();
-    console.log(condInfo);
 
   }, [])
+
+  console.log(condInfo, "veja");
+  console.log(user[0])
  
   return (
     <Page>
@@ -94,7 +97,20 @@ const News = () => {
       <Container>
         <h1>Avisos do condomínio</h1> 
         {/* se for admin n mostrar esse button */}
-        <Button variant="contained" onClick={handleOpen} startIcon={<Add/>} aria-label="addNews" size="large" style={{ backgroundColor: '#4f6ec4'}} > Novo Aviso </Button>
+        <div
+          hidden={(user[0]?.cpf === condInfo[0]?.cpf) ? false : true}
+        >
+          <Button
+            variant="contained"
+            onClick={handleOpen}
+            startIcon={<Add/>}
+            aria-label="addNews"
+            size="large"
+            style={{ backgroundColor: '#4f6ec4'}}
+          >
+            Novo Aviso
+          </Button>
+        </div>
       </Container>
       <CardsContainer>
         { renderNews() }

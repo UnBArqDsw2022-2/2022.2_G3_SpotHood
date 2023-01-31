@@ -35,6 +35,9 @@ const spotHoodService = {
       sexo,
       data_nascimento
     })
+
+  },
+
   getCond: async () => {
     const res = await APISpothood.get("/condominium/condominio/")
 
@@ -48,6 +51,20 @@ const spotHoodService = {
       descricao,
     })
 
+  },
+
+  createImovel: async (cpf, cnpj, informacao_complementar) => {
+    await APISpothood.post("/condominium/imovel/", {
+      cpf,
+      cnpj,
+      informacao_complementar
+    })
+  },
+
+  getImoveis: async () => {
+    const res = await APISpothood.get("/condominium/imovel/");
+
+    return res.data;
   }
 }
 
