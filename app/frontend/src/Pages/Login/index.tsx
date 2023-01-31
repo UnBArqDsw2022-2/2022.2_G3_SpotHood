@@ -1,50 +1,32 @@
 import { Link, useNavigate } from "react-router-dom";
 import { Page, Container, Form, TextLink, ButtonDiv, CreateAccountDiv } from "./style";
 import { Input } from "../../Components/Input";
-import { CustomButton } from "../../Components/CustomButton";
+import { CustomButton } from "../../Components/CustomButtom";
 import logo from "../../assets/SpotHood-logo.png";
-import { spotHoodService } from "../../Services/spotHoodServices";
-import { useContext, useEffect, useState } from "react";
-import { UserContext } from "../../Context/UserContext";
+import { blue } from "@mui/material/colors";
+import { useEffect, useState } from "react";
 
 const Login = () => {
   const navigate = useNavigate();
-  const userContext = useContext(UserContext)
-  const {user, setUser} = userContext
+
+  const signIn = () => {
+    alert('logou');
+  }
 
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
 
-  const signIn = async() => {
-    const loginResponse = await spotHoodService.login(email, password)
-    
-    setUser(loginResponse)
-
-    if(user != null){
-      navigate("/")
-    }
-  }
-
-  // useEffect( () => {
-  //   console.log(email, ' ', password);
-
-  //   const x = async () => {
-  //     const teste = await spotHoodService.getPeople()
-  //     console.log(teste);
-  //   }
-
-  //   x();
-
-
-  // }, [email, password])
+  useEffect( () => {
+    console.log(email, ' ', password);
+  }, [email, password])
 
   return (
     <Page>
       <Container>
         <img src={logo} alt="spothood-logo" width="50%" />
         <Form>
-          <Input label="E-mail" type="text" setText={setEmail} value={email} size = "100%"/>
-          <Input label="Senha" type="password" setText={setPassword} value={password} size = "100%"/>
+          <Input label="E-mail" type="text" setText={setEmail} value={email}/>
+          <Input label="Senha" type="password" setText={setPassword} value={password} />
         </Form>
         <TextLink>Esqueceu a senha?</TextLink>
         <ButtonDiv>

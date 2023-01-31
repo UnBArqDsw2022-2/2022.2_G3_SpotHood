@@ -1,21 +1,18 @@
-import "./App.css";
-import Routes from "./Routes";
-import Navbar from "./Components/navbar";
-import { UserProvider } from "./Context/UserContext";
+import './App.css';
+import Routes from './Routes';
 
 function App() {
   return (
-    <UserProvider>
-      <div className="App">
-        <div className="Header">
-          <Navbar />
-        </div>
+    <div className='App'>
 
-        <div className="Container">
-          <Routes />
-        </div>
+      <div className='Header'>
+
       </div>
-    </UserProvider>
+
+      <div className='Container'>
+        <Routes/>
+      </div>
+    </div>
   );
 }
 
