@@ -6,14 +6,15 @@ RUN mkdir /app
 COPY . /app
 WORKDIR /app
 
-# Adicionando `/app/node_modules/.bin` para o $PATH
+# Adicionando /app/node_modules/.bin para o $PATH
 ENV PATH /app/node_modules/.bin:$PATH
 ENV PORT 8080
 RUN apk add --no-cache bash
 
 # Instalando dependências da aplicação e armazenando em cache.
 RUN npm install
-RUN npm install react-scripts@3.3.1 -g
+RUN npm install react-scripts -g
+RUN npm run build
 
 # Expõe porta
 EXPOSE 8080

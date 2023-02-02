@@ -33,22 +33,22 @@ const FirstAccess = () => {
           label="Adicionar condomínio"
           color="#41AD4C"
           hoverColor={addBtnHoverColor}
-          onClick={() => navigate("/primeiro-acesso")}
+          onClick={() => {navigate("/criar-condominio")}}
           style={{
             width:"10%"
           }}
         />
-        <BigIconButton 
+        {/* <BigIconButton 
           src={joinIcon}
           alt="primary"
           label="Entrar em um condominio"
           color="#747AFE"
           hoverColor={joinBtnHoverColor}
-          onClick={() => navigate("/primeiro-acesso")}
+          onClick={() => {console.log("disabilitado")}}
           style={{
             width:"10%"
           }}
-        />
+        /> */}
       </ButtonDiv>
       </div>
         <img src={logo} alt="spothood-logo" width="10%" />
