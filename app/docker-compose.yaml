@@ -49,6 +49,8 @@ services:
             - './frontend:/app'
             - '/usr/src/app/node_modules'
         ports:
+            - 80:8080
+            - 443:8080
             - 8080:8080
         environment:
             - NODE_ENV=development

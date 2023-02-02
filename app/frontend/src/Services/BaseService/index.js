@@ -8,7 +8,7 @@ const HOST = process.env.NODE_ENV === 'development' ?
 )
 
 const APISpothood = axios.create({
-  baseURL: "http://localhost:8001"
+  baseURL:  'http://spothood.eastus.cloudapp.azure.com:8001/'
 })
 
 export {
