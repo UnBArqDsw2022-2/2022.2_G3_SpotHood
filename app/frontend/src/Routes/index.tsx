@@ -11,6 +11,7 @@ import { News } from "../Pages/News";
 import { Imovel } from "../Pages/Imovel";
 import { CreateHousingArea } from "../Pages/CommonArea/Create";
 import { HousingArea } from "../Pages/CommonArea/List";
+import { CreateCondominium } from "../Pages/CreateCondominium";
 
 const Routes = () => {
   return (
@@ -31,6 +32,7 @@ const Routes = () => {
         <Route path="/imoveis" element={<Imovel />}/>
         <Route path="/espaco-habitacional" element={<HousingArea/>}/>
         <Route path="/criar-espaco" element={<CreateHousingArea/>}/>
+        <Route path="/criar-condominio" element={<CreateCondominium/>}/>
       {/* </Route> */}
 
       {/* <Route path="/denied" element={<PermissionDenied />} /> */}

@@ -95,6 +95,14 @@ const CustomDrawer: React.FC<Props> = ({}) => {
             style={{
               fontWeight: "bold"
             }}
+            onClick={() => {navigate("/criar-condominio")}}
+          >
+            Criar Condominio
+          </OptionContainer>
+          <OptionContainer
+            style={{
+              fontWeight: "bold"
+            }}
             onClick={() => {
               localStorage.clear();
               navigate("/");

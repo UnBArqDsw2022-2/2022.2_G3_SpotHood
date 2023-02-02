@@ -1,9 +1,7 @@
 from rest_framework import viewsets, permissions
 from rest_framework.response import Response
-import django_filters
 from .models import Pessoa, Condominio, Aviso, Imovel, EspacoHabitacional, ReservaEspacoHabitacional
-from .serializers import PessoaSerializer, CondominioSerializer, AvisoSerializer,\
-                         ImovelSerializer, EspacoHabitacionalSerializer, ReservaEspacoHabitacionalSerializer
+from .serializers import PessoaSerializer, CondominioSerializer, AvisoSerializer, ImovelSerializer, EspacoHabitacionalSerializer, ReservaEspacoHabitacionalSerializer
 
 class PessoaViewSet(viewsets.ModelViewSet):
     queryset = Pessoa.objects.all()

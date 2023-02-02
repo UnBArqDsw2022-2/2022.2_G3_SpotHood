@@ -50,7 +50,7 @@ const Signup = () => {
       );
     }
 
-    navigate("/")
+    navigate("/");
   };
 
   return (
@@ -104,9 +104,7 @@ const Signup = () => {
               value={cpf}
               size="49%"
             />
-            <FormControl
-              sx={{ m: 1, minWidth: 120 }} size="small"
-            >
+            <FormControl sx={{ m: 1, minWidth: 120 }} size="small">ß
               <InputLabel id="demo-simple-select-label">Sexo</InputLabel>
               <Select
                 labelId="demo-simple-select-label"
@@ -118,7 +116,7 @@ const Signup = () => {
                 <MenuItem value={"M"}>Masculino</MenuItem>
                 <MenuItem value={"F"}>Feminino</MenuItem>
               </Select>
-              </FormControl>
+            </FormControl>
           </SmallInput>
           <SmallInput>
             <Input

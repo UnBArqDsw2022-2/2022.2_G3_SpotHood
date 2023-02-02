@@ -20,9 +20,7 @@ const Login = () => {
     
     setUser(loginResponse)
 
-    if(user != null){
-      navigate("/primeiro-acesso")
-    }
+    navigate("/primeiro-acesso")
   }
 
   return (

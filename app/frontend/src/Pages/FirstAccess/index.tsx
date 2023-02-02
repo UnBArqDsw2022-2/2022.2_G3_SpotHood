@@ -33,7 +33,7 @@ const FirstAccess = () => {
           label="Adicionar condomínio"
           color="#41AD4C"
           hoverColor={addBtnHoverColor}
-          onClick={() => alert("Cliquei")}
+          onClick={() => navigate("/primeiro-acesso")}
           style={{
             width:"10%"
           }}
@@ -44,7 +44,7 @@ const FirstAccess = () => {
           label="Entrar em um condominio"
           color="#747AFE"
           hoverColor={joinBtnHoverColor}
-          onClick={() => alert("Desabilitado")}
+          onClick={() => navigate("/primeiro-acesso")}
           style={{
             width:"10%"
           }}
